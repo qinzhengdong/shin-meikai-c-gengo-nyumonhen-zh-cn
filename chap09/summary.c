@@ -1,12 +1,12 @@
 /*
-	•¶š—ñ‚ğ‘–¸‚µ‚Ä•\¦‚·‚é
+	æ‰«æå¹¶æ˜¾ç¤ºå­—ç¬¦ä¸²
 */
 
 #include <stdio.h>
 
-#define STR_LENGTH	128		/* •¶š—ñ‚ÌÅ‘å’·iƒiƒ‹•¶š‚ğŠÜ‚Şj*/
+#define STR_LENGTH	128		/* å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ï¼ˆåŒ…æ‹¬ç©ºå­—ç¬¦ï¼‰*/
 
-/*--- •¶š—ñs‚Æ\¬•¶š‚ğ•\¦---*/
+/*--- æ˜¾ç¤ºå­—ç¬¦ä¸² s å’Œç»„æˆå­—ç¬¦ ---*/
 void put_string_rep(const char s[])
 {
 	int i = 0;
@@ -32,21 +32,21 @@ int main(void)
 	char s[STR_LENGTH];
 	char ss[5][STR_LENGTH];
 
-	printf("•¶š—ñsF");
+	printf("å­—ç¬¦ä¸²ï¼š");
 	scanf("%s", s);
 
-	printf("•¶š—ñ‚ğ‚TŒÂ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
+	printf("è¿›å£äº”å­—ç­¾ä¸²ã€‚\n");
 	for (i = 0; i < 5; i++) {
-		printf("ss[%d]F", i);
+		printf("ss[%d]ï¼š", i);
 		scanf("%s", ss[i]);
 	}
 
-	printf("•¶š—ñsF");
+	printf("å­—ç¬¦ä¸²ï¼š");
 	put_string_rep(s);
 
-	printf("•¶š—ñ‚Ì”z—ñss\n");
+	printf("å­—ç¬¦ä¸²æ•°ç»„ss\n");
 	for (i = 0; i < 5; i++) {
-		printf("ss[%d]F", i);
+		printf("ss[%d]ï¼š", i);
 		put_string_rep(ss[i]);
 	}
 

@@ -1,5 +1,5 @@
 /*
-	ƒtƒ@ƒCƒ‹‚ÌƒI[ƒvƒ“‚ÆƒNƒ[ƒY
+	æ‰“å¼€å’Œå…³é—­æ–‡ä»¶
 */
 
 #include <stdio.h>
@@ -8,13 +8,13 @@ int main(void)
 {
 	FILE *fp;
 
-	fp = fopen("abc", "r");						/* ƒtƒ@ƒCƒ‹‚ÌƒI[ƒvƒ“ */
+	fp = fopen("abc", "r");						/* æ‰“å¼€æ–‡ä»¶ */
 
 	if (fp == NULL)
-		printf("\aƒtƒ@ƒCƒ‹\"abc\"‚ðƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B\n");
+		printf("\a æ¡ \"abc\" éžæ³•å¼€æ”¾ã€‚\n");
 	else {
-		printf("\aƒtƒ@ƒCƒ‹\"abc\"‚ðƒI[ƒvƒ“‚µ‚Ü‚µ‚½B\n");
-		fclose(fp);								/* ƒtƒ@ƒCƒ‹‚ÌƒNƒ[ƒY */
+		printf("\a æ–‡æœ¬ \"abc\" æ‰“å¼€ã€‚\n");
+		fclose(fp);								/* å…³é—­æ–‡ä»¶ */
 	}
 
 	return 0;

@@ -1,26 +1,26 @@
 /*
-	‘æ3Í‚Ì‚Ü‚Æ‚ßi‚»‚Ì‚Pj“Ç‚İ‚ñ‚¾Œ‚Ì‹Gß‚ğ•\¦
+	ç¬¬ 3 ç« æ‘˜è¦ï¼ˆç¬¬ 1 éƒ¨åˆ†ï¼‰æ˜¾ç¤ºåŠ è½½æœˆä»½çš„å­£èŠ‚
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	int month;					/* Œ */
+	int month;					/* æœˆ */
 
-	printf("‰½Œ‚Å‚·‚©F");
+	printf("ç°åœ¨æ˜¯å‡ æœˆï¼Ÿ");
 	scanf("%d", &month);
 
 	if (month < 1 || month > 12)
-		printf("%dŒ‚Í‚ ‚è‚Ü‚¹‚ñ‚æ!!\a\n", month);
+		printf("%dæ²¡æœ‰æœˆäº®ï¼ï¼\a\n", month);
 	else if (month <= 2 || month == 12)
-		printf("%dŒ‚Í“~‚Å‚·B\n", month);
+		printf("%d æœˆäº®æ˜¯å†¬å¤©ã€‚\n", month);
 	else if (month >= 9)
-		printf("%dŒ‚ÍH‚Å‚·B\n", month);
+		printf("%d Tsukiryo æ˜¯é…’åã€‚\n", month);
 	else if (month >= 6)
-		printf("%dŒ‚Í‰Ä‚Å‚·B\n", month);
+		printf("%d æœˆäº®æ˜¯å¤å¤©ã€‚\n", month);
 	else
-		printf("%dŒ‚Ít‚Å‚·B\n", month);
+		printf("%d Tsukiryo æ˜¯é¡ºå¤©çš„å¤©é“ã€‚\n", month);
 
 	return 0;
 }

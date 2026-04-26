@@ -1,12 +1,12 @@
 /*
-	”z—ña‚Ì—v‘f‚ğƒRƒs[‚·‚é
+	å¤åˆ¶æ•°ç»„açš„å…ƒç´ 
 */
 
 #include <stdio.h>
 
-#define  NUMBER		5		/* —v‘f” */
+#define  NUMBER		5		/* è¦ç´ æ•° */
 
-/* ”z—ñb‚Ìæ“ªnŒÂ‚Ì—v‘f‚ğa‚ÉƒRƒs[ */
+/* å°†æ•°ç»„ b çš„å‰ n ä¸ªå…ƒç´ å¤åˆ¶åˆ° a */
 void cpy_ary(int a[], const int b[], int n)
 {
 	int i;
@@ -18,19 +18,19 @@ void cpy_ary(int a[], const int b[], int n)
 int main(void)
 {
 	int i;
-	int v1[NUMBER];			/* ƒRƒs[Œ³ */
-	int v2[NUMBER];			/* ƒRƒs[æ */
+	int v1[NUMBER];			/* å¤åˆ¶æ¥æº */
+	int v2[NUMBER];			/* å¤åˆ¶ç›®çš„åœ° */
 
 	for (i = 0; i < NUMBER; i++) {
-		printf("v1[%d]F", i);
+		printf("v1[%d]ï¼š", i);
 		scanf("%d", &v1[i]);
 	}
 
-	cpy_ary(v2, v1, NUMBER);	/* v1‚Ì‘S—v‘f‚ğv2‚ÉƒRƒs[ */
+	cpy_ary(v2, v1, NUMBER);	/* å°† v1 çš„æ‰€æœ‰å…ƒç´ å¤åˆ¶åˆ° v2 */
 
-	puts("”z—ñv1‚Ì‘S—v‘f‚ğv2‚ÉƒRƒs[‚µ‚Ü‚µ‚½B\n");
+	puts("é€šç”¨æ•°å­—ç»„åˆv1å’Œæ‰€å±å…ƒç´ åŠ æ³•ç³»ç»Ÿv2ã€‚\n");
 	for (i = 0; i < NUMBER; i++) {
-		printf("v2[%d]F%d\n", i, v2[i]);
+		printf("v2[%d]ï¼š%d\n", i, v2[i]);
 	}
 
 	return 0;

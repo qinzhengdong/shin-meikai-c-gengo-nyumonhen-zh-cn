@@ -1,17 +1,17 @@
 /*
-	Ã“I‹L‰¯ˆæŠúŠÔ‚ð‚à‚ÂƒIƒuƒWƒFƒNƒg‚ÌˆÃ–Ù‚Ì‰Šú‰»‚ðŠm”F
+	æ£€æŸ¥å…·æœ‰é™æ€å­˜å‚¨æŒç»­æ—¶é—´çš„å¯¹è±¡çš„éšå¼åˆå§‹åŒ–
 */
 
 #include <stdio.h>
 
-int fx;						/* 0‚Å‰Šú‰»‚³‚ê‚é */
+int fx;						/* åˆå§‹åŒ–ä¸º0 */
 
 int main(void)
 {
 	int i;
-	static int    si;		/* 0‚Å‰Šú‰»‚³‚ê‚é */
-	static double sd;		/* 0.0‚Å‰Šú‰»‚³‚ê‚é */
-	static int    sa[5];	/* ‘S—v‘f‚ª0‚Å‰Šú‰»‚³‚ê‚é */
+	static int    si;		/* åˆå§‹åŒ–ä¸º0 */
+	static double sd;		/* åˆå§‹åŒ–ä¸º0.0 */
+	static int    sa[5];	/* æ‰€æœ‰å…ƒç´ éƒ½åˆå§‹åŒ–ä¸º0 */
 
 	printf("fx = %d\n", fx);
 	printf("si = %d\n", si);

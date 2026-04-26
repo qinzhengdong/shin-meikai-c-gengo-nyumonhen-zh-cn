@@ -1,5 +1,5 @@
 /*
-	Œ»İ‚Ì“ú•tE‚ğ•\¦
+	æ˜¾ç¤ºå½“å‰æ—¥æœŸå’Œæ—¶é—´
 */
 
 #include <time.h>
@@ -7,18 +7,18 @@
 
 int main()
 {
-	time_t current = time(NULL);				/* Œ»İ‚Ì—ï */
-	struct tm *timer = localtime(&current);		/* —v‘f•Ê‚Ìi’n•ûj*/
-	char *wday_name[] = {"“ú", "Œ", "‰Î", "…", "–Ø", "‹à", "“y"};
+	time_t current = time(NULL);				/* å½“å‰æ—¥å†æ—¶é—´ */
+	struct tm *timer = localtime(&current);		/* å„å…ƒç´ çš„æ—¶é—´ï¼ˆå½“åœ°æ—¶é—´ï¼‰*/
+	char *wday_name[] = {"æ—¥", "æœˆ", "ç«", "æ°´", "æœ¨", "é‡‘", "åœŸ"};
 
-	printf("Œ»İ‚Ì“ú•tE‚Í%d”N%dŒ%d“úi%sj%d%d•ª%d•b‚Å‚·B\n",
-			timer->tm_year + 1900,			/* ”Ni1900‚ğ‰Á‚¦‚Ä‹‚ß‚éj*/
-			timer->tm_mon + 1,				/* Œi1‚ğ‰Á‚¦‚Ä‹‚ß‚éj*/
-			timer->tm_mday,					/* “ú */
-			wday_name[timer->tm_wday],		/* —j“úi0`6j*/
-			timer->tm_hour,					/*  */
-			timer->tm_min,					/* •ª */
-			timer->tm_sec					/* •b */
+	printf("å½“å¤©çš„å½“å‰å‘¨æœŸ PH_0__ å¹´ %d æœˆ %d å¤©ç©º (%s) %d å°å°æ—¶ %d åˆ†é’Ÿ %d ç§’ã€‚\n",
+			timer->tm_year + 1900,			/* å¹´ä»½ï¼ˆåŠ 1900å³å¯æŸ¥æ‰¾ï¼‰*/
+			timer->tm_mon + 1,				/* æœˆï¼ˆåŠ 1è®¡ç®—ï¼‰*/
+			timer->tm_mday,					/* æ—¥ */
+			wday_name[timer->tm_wday],		/* æ›œæ—¥ï¼ˆ0ï½6ï¼‰*/
+			timer->tm_hour,					/* æ™‚ */
+			timer->tm_min,					/* åˆ† */
+			timer->tm_sec					/* ç§’ */
 		  );
 	return 0;
 }

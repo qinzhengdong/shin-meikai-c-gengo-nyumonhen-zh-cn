@@ -1,24 +1,24 @@
 /*
-	’·•ûŒ`‚Ì–ÊÏ‚ğ‹‚ß‚é
+	æ±‚çŸ©å½¢çš„é¢ç§¯
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	int width;		/* ’·•ûŒ`‚Ì‰¡• */
-	int height;		/* ’·•ûŒ`‚Ì‚‚³ */
+	int width;		/* çŸ©å½¢çš„å®½åº¦ */
+	int height;		/* çŸ©å½¢é«˜åº¦ */
 
-	puts("’·•ûŒ`‚Ì–ÊÏ‚ğ‹‚ß‚Ü‚·B");
+	puts("çŸ©å½¢è¡¨é¢ã€‚");
 
-	printf("‰¡•F");
+	printf("æ¨ªå¹…ï¼š");
 	scanf("%d", &width);
 
-	printf("‚‚³F");
+	printf("é«˜åº¦ï¼š");
 	scanf("%d", &height);
 
-	/* –ÊÏ‚ğ•\¦ */
-	printf("–ÊÏ‚Í%d‚Å‚·B\a\n", width * height);
+	/* å±•ç¤ºåŒº */
+	printf("è¡¨é¢é«˜åº¦ %dã€‚ \a\n", width * height);
 
 	return 0;
 }

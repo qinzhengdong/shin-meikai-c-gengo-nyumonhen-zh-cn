@@ -1,16 +1,16 @@
 /*
-	“ñ‚Â‚ÌÀ”’l‚ğ“Ç‚İ‚ñ‚Å˜aE·EÏE¤‚ğÀ”‚Å•\¦
+	å®é™…æµ‹é‡æ•°é‡ã€å·®å¼‚ã€å®é™…å®šé‡å·¥ä½œç»“æœ
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	double vx, vy;		/* •‚“®¬”“_” */
+	double vx, vy;		/* æµ®å‹•å°æ•°ç‚¹æ•° */
 
-	puts("“ñ‚Â‚ÌÀ”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-	printf("À”vxF");   scanf("%lf", &vx);
-	printf("À”vyF");   scanf("%lf", &vy);
+	puts("å®é™…æ•°é‡ã€‚");
+	printf("å®Ÿæ•°vxï¼š");   scanf("%lf", &vx);
+	printf("å®Ÿæ•°vyï¼š");   scanf("%lf", &vy);
 
 	printf("vx + vy = %f\n",  vx + vy);
 	printf("vx - vy = %f\n",  vx - vy);

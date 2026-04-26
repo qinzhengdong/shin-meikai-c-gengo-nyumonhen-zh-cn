@@ -1,25 +1,25 @@
 /*
-	“Ç‚İ‚ñ‚¾®”’l‚É‰‚¶‚ÄƒWƒƒƒ“ƒPƒ“‚Ìè‚ğ•\¦i0, 1, 2‚Ì‚İ‚ğó‚¯•t‚¯‚éj
+	æ ¹éƒ¨æ•´æ•°å¼€å£æŒ‡ç¤ºçŸ³å¤´ä¿®å‰ªæœºèŠ¯ï¼ˆè§¦ç‚¹0ã€1ã€2ï¼‰
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	int hand;	/* è */
+	int hand;	/* æ‰‹ */
 
 	do {
-		printf("è‚ğ‘I‚ñ‚Å‚­‚¾‚³‚¢y0cƒO[^1cƒ`ƒ‡ƒL^2cƒp[zF");
+		printf("è¯·é€‰æ‹©ä¸€ä¸ªåŠ¨ä½œ [0...Goo/1...Scotch/2...Par]ï¼š");
 		scanf("%d", &hand);
 	} while (hand < 0 || hand > 2);
 
-	printf("‚ ‚È‚½‚Í");
+	printf("ä½ ");
 	switch (hand) {
-	 case 0: printf("ƒO[");	break;
-	 case 1: printf("ƒ`ƒ‡ƒL");	break;
-	 case 2: printf("ƒp[");	break;
+	 case 0: printf("ç²˜æ€§ç‰©");	break;
+	 case 1: printf("é•¿æœ¨");	break;
+	 case 2: printf("æ ‡æ†");	break;
 	}
-	printf("‚ğ‘I‚Ñ‚Ü‚µ‚½B\n");
+	printf("æˆ‘é€‰æ‹©äº†å®ƒã€‚\n");
 
 	return 0;
 }

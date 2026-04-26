@@ -1,14 +1,14 @@
 /*
-	‚Tl‚ÌŠw¶‚Ìs–¼‘O‚Æg’·t‚ğg’·‚Ì¸‡‚Éƒ\[ƒg
+	ç¿”äº”åå¤§å¼Ÿå­å§“æ°ã€èº«èº¯ï¼Œæ’åˆ—é«˜ä½ã€‚
 */
 
 #include <stdio.h>
 #include <string.h>
 
-#define NUMBER		5		/* Šw¶‚Ìl” */
-#define NAME_LEN	64		/* –¼‘O‚Ì•¶š” */
+#define NUMBER		5		/* å­¦ç”Ÿäººæ•° */
+#define NAME_LEN	64		/* åç§°ä¸­çš„å­—ç¬¦æ•° */
 
-/*--- x‚¨‚æ‚Ñy‚ªw‚·®”‚Ì’l‚ğŒğŠ· ---*/
+/*--- äº¤æ¢xå’ŒyæŒ‡å‘çš„æ•´æ•°å€¼---*/
 void swap_int(int *x, int *y)
 {
 	int temp = *x;
@@ -16,7 +16,7 @@ void swap_int(int *x, int *y)
 	*y = temp;
 }
 
-/*--- sx‚¨‚æ‚Ñsy‚ªw‚·•¶š—ñ‚ğŒğŠ· ---*/
+/*--- äº¤æ¢ sx å’Œ sy æŒ‡å‘çš„å­—ç¬¦ä¸² ---*/
 void swap_str(char *sx, char *sy)
 {
 	char temp[NAME_LEN];
@@ -26,7 +26,7 @@ void swap_str(char *sx, char *sy)
 	strcpy(sy, temp);
 }
 
-/*--- ”z—ñnum‚Æstr‚Ìæ“ªnŒÂ‚Ì—v‘f‚ğnum‚ÉŠî‚Ã‚¢‚Ä¸‡‚Éƒ\[ƒg ---*/
+/*--- æ ¹æ®numå‡åºå¯¹æ•°ç»„numå’Œstrçš„å‰nä¸ªå…ƒç´ è¿›è¡Œæ’åº---*/
 void sort(int num[], char str[][NAME_LEN], int n)
 {
 	int i, j;
@@ -48,13 +48,13 @@ int main(void)
 	char name[][NAME_LEN] = {"Sato", "Sanaka", "Takao", "Mike", "Masaki"};
 
 	for (i = 0; i < NUMBER; i++)
-		printf("%2dF%-8s%4d\n", i + 1, name[i], height[i]);
+		printf("%2dï¼š%-8s%4d\n", i + 1, name[i], height[i]);
 
-	sort(height, name, NUMBER);		/* g’·‚Ì¸‡‚Ég’·‚Æ–¼‘O‚ğƒ\[ƒg */
+	sort(height, name, NUMBER);		/* æŒ‰èº«é«˜å‡åºå¯¹èº«é«˜å’Œå§“åè¿›è¡Œæ’åº */
 
-	puts("\ng’·‡‚Éƒ\[ƒg‚µ‚Ü‚µ‚½B");
+	puts("\n èŒä½é«˜ã€‚");
 	for (i = 0; i < NUMBER; i++)
-		printf("%2dF%-8s%4d\n", i + 1, name[i], height[i]);
+		printf("%2dï¼š%-8s%4d\n", i + 1, name[i], height[i]);
 
 	return 0;
 }

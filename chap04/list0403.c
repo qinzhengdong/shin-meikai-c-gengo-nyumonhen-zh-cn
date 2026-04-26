@@ -1,29 +1,29 @@
 /*
-	®”’l‚ğŸX‚Æ“Ç‚İ‚ñ‚Å‡Œv‚Æ•½‹Ï‚ğ•\¦
+	ä¾æ¬¡è¯»å–æ•´æ•°å€¼å¹¶æ˜¾ç¤ºæ€»å’Œå’Œå¹³å‡å€¼
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	int sum = 0;	/* ‡Œv */
-	int cnt = 0;	/* ®”’l‚ÌŒÂ” */
-	int retry;		/* ˆ—‚ğ‘±‚¯‚é‚© */
+	int sum = 0;	/* æ€»è®¡ */
+	int cnt = 0;	/* æ•´æ•°å€¼çš„æ•°é‡ */
+	int retry;		/* ç»§ç»­å¤„ç† */
 
 	do {
 		int t;
 
-		printf("®”’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		printf("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°å€¼ï¼š");
 		scanf("%d", &t);
 
-		sum = sum + t;	 /* sum‚Ét‚ğ‰Á‚¦‚½’l‚ğsum‚É‘ã“üisum‚Ét‚ğ‰Á‚¦‚éj*/
-		cnt = cnt + 1;	 /* cnt‚É1‚ğ‰Á‚¦‚½’l‚ğcnt‚É‘ã“üicnt‚É1‚ğ‰Á‚¦‚éj*/
+		sum = sum + t;	 /* å°†sumåŠ ä¸Štå¾—åˆ°çš„å€¼èµ‹ç»™sumï¼ˆsumåŠ ä¸Štï¼‰*/
+		cnt = cnt + 1;	 /* å°†cntçš„å€¼åŠ 1èµ‹ç»™cntï¼ˆcntåŠ 1ï¼‰*/
 
-		printf("‚Ü‚¾H<Yesc0/Noc9>F");
+		printf("ä»ç„¶ï¼Ÿ <æ˜¯â€¦0/å¦â€¦9>ï¼š");
 		scanf("%d", &retry);
 	} while (retry == 0);
 
-	printf("‡Œv‚Í%d‚Å•½‹Ï‚Í%.2f‚Å‚·B\n", sum, (double)sum / cnt);
+	printf("å¹³å‡å¼ºåº¦ %dï¼Œå¹³å‡å¼ºåº¦ %.2fã€‚\n", sum, (double)sum / cnt);
 
 	return 0;
 }

@@ -1,16 +1,16 @@
 /*
-	l‚Â‚Ì®”‚ÌÅ‘å’l‚ğ‹‚ß‚é
+	æ±‚å››ä¸ªæ•´æ•°çš„æœ€å¤§å€¼
 */
 
 #include <stdio.h>
 
-/*--- ‘å‚«‚¢‚Ù‚¤‚Ì’l‚ğ•Ô‚· ---*/
+/*--- è¿”å›è¾ƒå¤§çš„å€¼ ---*/
 int max2(int a, int b)
 {
 	return (a > b) ? a : b;
 }
 
-/*--- l‚Â‚Ì®”‚ÌÅ‘å’l‚ğ•Ô‚· ---*/
+/*--- è¿”å›å››ä¸ªæ•´æ•°çš„æœ€å¤§å€¼ ---*/
 int max4(int a, int b, int c, int d)
 {
 	return max2(max2(a, b), max2(c, d));
@@ -20,13 +20,13 @@ int main(void)
 {
 	int n1, n2, n3, n4;
 
-	puts("l‚Â‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-	printf("®”n1F");   scanf("%d", &n1);
-	printf("®”n2F");   scanf("%d", &n2);
-	printf("®”n3F");   scanf("%d", &n3);
-	printf("®”n4F");   scanf("%d", &n4);
+	puts("å¯¼å…¥ 4 ä¸ªæ•´æ•°ã€‚");
+	printf("æ•´æ•°n1ï¼š");   scanf("%d", &n1);
+	printf("æ•´æ•°n2ï¼š");   scanf("%d", &n2);
+	printf("æ•´æ•°n3ï¼š");   scanf("%d", &n3);
+	printf("æ•´æ•°n4ï¼š");   scanf("%d", &n4);
 
-	printf("Å‚à‘å‚«‚¢’l‚Í%d‚Å‚·B\n", max4(n1, n2, n3, n4));
+	printf("æœ€é«˜çº§åˆ« %dã€‚\n", max4(n1, n2, n3, n4));
 
 	return 0;
 }

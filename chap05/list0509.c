@@ -1,5 +1,5 @@
 /*
-	‚Tl‚ÌŠw¶‚Ì“_”‚ğ“Ç‚İ‚ñ‚Å‡Œv“_‚Æ•½‹Ï“_‚ğ•\¦
+	è¯»å–5åå­¦ç”Ÿçš„æˆç»©å¹¶æ˜¾ç¤ºæ€»åˆ†å’Œå¹³å‡åˆ†
 */
 
 #include <stdio.h>
@@ -7,18 +7,18 @@
 int main(void)
 {
 	int i;
-	int tensu[5];		/* ‚Tl‚ÌŠw¶‚Ì“_” */
-	int sum = 0;		/* ‡Œv“_ */
+	int tensu[5];		/* 5åå­¦ç”Ÿæˆç»© */
+	int sum = 0;		/* æ€»åˆ† */
 
-	printf("5l‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
+	printf("å‚åŠ äººæ•°ä¸º5äººã€‚\n");
 	for (i = 0; i < 5; i++) {
-		printf("%2d”ÔF", i + 1);
+		printf("%2då·ï¼š", i + 1);
 		scanf("%d", &tensu[i]);
 		sum += tensu[i];
 	}
 
-	printf("‡Œv“_F%5d\n", sum);
-	printf("•½‹Ï“_F%5.1f\n", (double)sum / 5);
+	printf("æ€»åˆ†ï¼š%5d\n", sum);
+	printf("å¹³å‡åˆ†ï¼š%5.1f\n", (double)sum / 5);
 
 	return 0;
 }

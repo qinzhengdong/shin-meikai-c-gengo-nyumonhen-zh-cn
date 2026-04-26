@@ -1,19 +1,19 @@
 /*
-	‚Q“_ŠÔ‚Ì‹——£‚ğ‹‚ß‚é
+	æŸ¥æ‰¾ä¸¤ç‚¹ä¹‹é—´çš„è·ç¦»
 */
 
 #include <math.h>
 #include <stdio.h>
 
-#define sqr(n)  ((n) * (n))		/* ‚Qæ’l‚ğ‹‚ß‚é */
+#define sqr(n)  ((n) * (n))		/* æ±‚å¹³æ–¹å€¼ */
 
-/*=== “_‚ÌÀ•W‚ğ•\‚·\‘¢‘Ì ===*/
+/*===æ˜¾ç¤ºç‚¹æ±‡æ€»===*/
 typedef struct  {
-	double x;	/* ‚wÀ•W */
-	double y;	/* ‚xÀ•W */
+	double x;	/* ï¼¸åº§æ¨™ */
+	double y;	/* ï¼¹åº§æ¨™ */
 } Point;
 
-/*--- “_pa‚Æ“_pb‚Ì‹——£‚ğ•Ô‚·---*/
+/*--- è¿”å›ç‚¹ pa å’Œç‚¹ pb ä¹‹é—´çš„è·ç¦»---*/
 double distance_of(Point pa, Point pb)
 {
 	return sqrt(sqr(pa.x - pb.x) + sqr(pa.y - pb.y));
@@ -23,12 +23,12 @@ int main(void)
 {
 	Point crnt, dest;
 
-	printf("Œ»İ’n‚Ì‚wÀ•WF");   scanf("%lf", &crnt.x);
-	printf("@@@@‚xÀ•WF");   scanf("%lf", &crnt.y);
-	printf("–Ú“I’l‚Ì‚wÀ•WF");   scanf("%lf", &dest.x);
-	printf("@@@@‚xÀ•WF");   scanf("%lf", &dest.y);
+	printf("å½“å‰ä½ç½®çš„Xåæ ‡ï¼š");   scanf("%lf", &crnt.x);
+	printf("ã€€ã€€ã€€ã€€ï¼¹åº§æ¨™ï¼š");   scanf("%lf", &crnt.y);
+	printf("ç›®æ ‡å€¼çš„Xåæ ‡ï¼š");   scanf("%lf", &dest.x);
+	printf("ã€€ã€€ã€€ã€€ï¼¹åº§æ¨™ï¼š");   scanf("%lf", &dest.y);
 
-	printf("–Ú“I’l‚Ü‚Å‚Ì‹——£‚Í%.2f‚Å‚·B\n", distance_of(crnt, dest));
+	printf("è·ç¦»ä¸º %.2fã€‚\n", distance_of(crnt, dest));
 
 	return 0;
 }

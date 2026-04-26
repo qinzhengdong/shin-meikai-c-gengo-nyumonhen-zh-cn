@@ -1,5 +1,5 @@
 /*
-	ƒtƒ@ƒCƒ‹‚Ìƒ_ƒ“ƒviƒtƒ@ƒCƒ‹‚Ì’†g‚ğ•¶š‚ÆƒR[ƒh‚Å•\¦‚·‚éj
+	æ–‡ä»¶è½¬å‚¨ï¼ˆä»¥å­—ç¬¦å’Œä»£ç æ˜¾ç¤ºæ–‡ä»¶å†…å®¹ï¼‰
 */
 
 #include <ctype.h>
@@ -11,34 +11,34 @@ int main(void)
 	unsigned long count = 0;
 	unsigned char buf[16];
 	FILE *fp;
-	char fname[FILENAME_MAX];			/* ƒtƒ@ƒCƒ‹–¼ */
+	char fname[FILENAME_MAX];			/* æ–‡ä»¶å */
 
-	printf("ƒtƒ@ƒCƒ‹–¼F");
+	printf("æ–‡ä»¶åï¼š");
 	scanf("%s", fname);
 
-	if ((fp = fopen(fname, "rb")) == NULL)					/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	if ((fp = fopen(fname, "rb")) == NULL)					/* æ‰“å¼€ */
+		printf("éæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
 		while ((n = fread(buf, 1, 16, fp)) > 0) {
 			int i;
 
-			printf("%08lX ", count);						/* ƒAƒhƒŒƒX */
+			printf("%08lX ", count);						/* åœ°å€ */
 
-			for (i = 0; i < n; i++)							/* 16i” */
+			for (i = 0; i < n; i++)							/* 16é€²æ•° */
 				printf("%02X ", (unsigned)buf[i]);
 
 			if (n < 16)
 				for (i = n; i < 16; i++)
 					printf("   ");
 
-			for (i = 0; i < n; i++)							/* •¶š */
+			for (i = 0; i < n; i++)							/* æ–‡å­— */
 				putchar(isprint(buf[i]) ? buf[i] : '.');
 
 			putchar('\n');
 
 			count += 16;
 		}
-		fclose(fp);											/* ƒNƒ[ƒY */
+		fclose(fp);											/* å…³é—­ */
 	}
 
 	return 0;

@@ -1,34 +1,34 @@
 /*
-	Å‚“_‚ğ‹‚ß‚é
+	æ‰¾åˆ°æœ€é«˜åˆ†
 */
 
 #include <stdio.h>
 
-#define NUMBER	5	/* Šw¶‚Ìl” */
+#define NUMBER	5	/* å­¦ç”Ÿäººæ•° */
 
-int tensu[NUMBER];	/* ”z—ñ‚Ì’è‹` */
+int tensu[NUMBER];	/* æ•°ç»„å®šä¹‰ */
 
-int top(void);		/* ŠÖ”top‚ÌŠÖ”Œ´Œ^éŒ¾ */
+int top(void);		/* å‡½æ•°topçš„å‡½æ•°åŸå‹å£°æ˜ */
 
 int main(void)
 {
-	extern int tensu[];		/* ”z—ñ‚ÌéŒ¾iÈ—ª‰Âj*/
+	extern int tensu[];		/* æ•°ç»„å£°æ˜ï¼ˆå¯é€‰ï¼‰*/
 	int i;
 
-	printf("%dl‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n", NUMBER);
+	printf("ç®€ä»‹ %d äººåˆ†æ•°ã€‚\n", NUMBER);
 	for (i = 0; i < NUMBER; i++) {
-		printf("%dF", i + 1);
+		printf("%dï¼š", i + 1);
 		scanf("%d", &tensu[i]);
 	}
-	printf("Å‚“_%d\n", top());
+	printf("æœ€é«˜ç‚¹ï¼%d\n", top());
 
 	return 0;
 }
 
-/*--- ”z—ñtensu‚ÌÅ‘å’l‚ğ•Ô‚·ŠÖ”top‚ÌŠÖ”’è‹` ---*/
+/*--- è¿”å›æ•°ç»„tensuçš„æœ€å¤§å€¼çš„å‡½æ•°topçš„å‡½æ•°å®šä¹‰ ---*/
 int top(void)
 {
-	extern int tensu[];		/* ”z—ñ‚ÌéŒ¾iÈ—ª‰Âj*/
+	extern int tensu[];		/* æ•°ç»„å£°æ˜ï¼ˆå¯é€‰ï¼‰*/
 	int i;
 	int max = tensu[0];
 

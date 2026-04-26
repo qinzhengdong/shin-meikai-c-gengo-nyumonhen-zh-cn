@@ -1,10 +1,10 @@
 /*
-	•¶š—ñ‚ğƒRƒs[‚·‚éiŒë‚Á‚½—áj
+	å¤åˆ¶å­—ç¬¦ä¸²ï¼ˆé”™è¯¯ç¤ºä¾‹ï¼‰
 */
 
 #include <stdio.h>
 
-/*--- •¶š—ñs‚ğd‚ÉƒRƒs[‚·‚é ---*/
+/*--- å°†å­—ç¬¦ä¸² s å¤åˆ¶åˆ° d ---*/
 char *str_copy(char *d, const char *s)
 {
 	char *t = d;
@@ -21,13 +21,13 @@ int main(void)
 
 	printf("ptr = \"%s\"\n", ptr);
 
-	printf("ƒRƒs[‚·‚é‚Ì‚ÍF", tmp);
+	printf("å¤åˆ¶ï¼š", tmp);
 	scanf("%s", tmp);
 
-	str_copy(ptr, tmp);					/* tmp‚ğptr‚ÉƒRƒs[ */
+	str_copy(ptr, tmp);					/* å°† tmp å¤åˆ¶åˆ° ptr */
 
-	puts("ƒRƒs[‚µ‚Ü‚µ‚½B");
-	printf("ptr = \"%s\"\n", ptr);		/* ƒRƒs[Œã‚Ìptr‚ğ•\¦ */
+	puts("æˆ‘å¯ä»¥æ§åˆ¶å®ƒã€‚");
+	printf("ptr = \"%s\"\n", ptr);		/* å¤åˆ¶åæ˜¾ç¤ºptr */
 
 	return 0;
 }

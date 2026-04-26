@@ -1,10 +1,10 @@
 /*
-	0`65535‚ğ10iE2iE8iE16i‚Å•\¦
+	10é€Ÿç³»ç»Ÿã€2é€Ÿç³»ç»Ÿã€8é€Ÿç³»ç»Ÿã€16é€Ÿç³»ç»Ÿ 0ï½65535
 */
 
 #include <stdio.h>
 
-/*--- ®”x’†‚ÌƒZƒbƒg‚³‚ê‚½ƒrƒbƒg”‚ğ•Ô‚· ---*/
+/*--- è¿”å›æ•´æ•° x ä¸­è®¾ç½®çš„ä½æ•° ---*/
 int count_bits(unsigned x)
 {
 	int bits = 0;
@@ -15,13 +15,13 @@ int count_bits(unsigned x)
 	return bits;
 }
 
-/*--- unsignedŒ^‚Ìƒrƒbƒg”‚ğ•Ô‚· ---*/
+/*--- è¿”å›æ— ç¬¦å·ç±»å‹çš„ä½æ•° ---*/
 int int_bits(void)
 {
 	return count_bits(~0U);
 }
 
-/*--- unsignedŒ^®”x‚Ì‰ºˆÊnƒrƒbƒg‚ğ•\¦ ---*/
+/*--- æ˜¾ç¤ºæ— ç¬¦å·ç±»å‹æ•´æ•° x çš„ä½ n ä½ ---*/
 void print_nbits(unsigned x, unsigned n)
 {
 	int i = int_bits();

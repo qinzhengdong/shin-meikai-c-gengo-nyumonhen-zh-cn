@@ -1,10 +1,10 @@
 /*
-	Œx•ñ‚ğo—Í‚·‚é
+	è¾“å‡ºæŠ¥è­¦
 */
 
 #include <stdio.h>
 
-/* Œx•ñ‚ğo—Í */
+/* è¾“å‡ºæŠ¥è­¦ */
 void put_alert(void)
 {
 	putchar('\a');
@@ -15,7 +15,7 @@ int main(void)
 	int i;
 	int no;
 
-	printf("Œx•ñ‚ğo—Í‚·‚é‰ñ”F");
+	printf("è¾“å‡ºæŠ¥è­¦æ¬¡æ•°ï¼š");
 	scanf("%d", &no);
 
 	for (i = 0; i < no; i++)

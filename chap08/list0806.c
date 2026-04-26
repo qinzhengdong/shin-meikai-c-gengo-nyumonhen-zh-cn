@@ -1,36 +1,36 @@
 /*
-	‘I‚Î‚ê‚½“®•¨‚Ì–Â‚«º‚ğ•\¦
+	æ˜¾ç¤ºé€‰å®šçš„åŠ¨ç‰©å£°éŸ³
 */
 
 #include <stdio.h>
 
 enum animal { Dog, Cat, Monkey, Invalid };
 
-/*--- Œ¢‚ª–Â‚­ ---*/
+/*---ç‹—å«äº†---*/
 void dog(void)
 {
-	puts("ƒƒ“ƒƒ“!!");
+	puts("æ±ªæ±ªï¼ï¼");
 }
 
-/*--- ”L‚ª–Â‚­ ---*/
+/*--- çŒ«å–µå–µå« ---*/
 void cat(void)
 {
-	puts("ƒjƒƒ`ƒI!!");
+	puts("å–µï¼ï¼");
 }
 
-/*--- ‰‚ª–Â‚­ ---*/
+/*--- çŒ´å­å“­äº† ---*/
 void monkey(void)
 {
-	puts("ƒLƒbƒLƒb!!");
+	puts("çªçªï¼ï¼");
 }
 
-/*--- “®•¨‚ğ‘I‚Ô ---*/
+/*--- é€‰æ‹©ä¸€ç§åŠ¨ç‰© ---*/
 enum animal select(void)
 {
 	int tmp;
 
 	do {
-		printf("0cŒ¢@1c”L@2c‰@3cI—¹F");
+		printf("0â€¦çŠ¬ã€€1â€¦çŒ«ã€€2â€¦çŒ¿ã€€3â€¦çµ‚äº†ï¼š");
 		scanf("%d", &tmp);
 	} while (tmp < Dog || tmp > Invalid);
 	return tmp;

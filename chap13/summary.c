@@ -1,5 +1,5 @@
 /*
-	•W€“ü—Í‚©‚ç‚Ì“ü—Í‚ğƒtƒ@ƒCƒ‹‚É‘‚«‚Ş
+	å°†è¾“å…¥ä»æ ‡å‡†è¾“å…¥å†™å…¥æ–‡ä»¶
 */
 
 #include <stdio.h>
@@ -7,18 +7,18 @@
 int main(void)
 {
 	int ch;
-	FILE *fp;						/* ƒRƒs[æƒtƒ@ƒCƒ‹ */
-	char fname[FILENAME_MAX];		/* ƒRƒs[æƒtƒ@ƒCƒ‹–¼ */
+	FILE *fp;						/* å¤åˆ¶ç›®æ ‡æ–‡ä»¶ */
+	char fname[FILENAME_MAX];		/* å¤åˆ¶ç›®æ ‡æ–‡ä»¶å */
 
-	printf("ƒRƒs[æƒtƒ@ƒCƒ‹–¼F");
+	printf("å¤åˆ¶ç›®æ ‡æ–‡ä»¶åï¼š");
 	scanf("%s\n", fname);
 
-	if ((fp = fopen(fname, "w")) == NULL)	/* ƒRƒs[æ‚ğƒI[ƒvƒ“ */
-		printf("\aƒRƒs[æƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	if ((fp = fopen(fname, "w")) == NULL)	/* æ‰“å¼€å¤åˆ¶ç›®çš„åœ° */
+		printf("\a æœªç»æˆæƒè¿›å…¥ã€‚\n");
 	else {
 		while ((ch = fgetc(stdin)) != EOF)
 			fputc(ch, fp);
-		fclose(fp);							/* ƒRƒs[æ‚ğƒNƒ[ƒY */
+		fclose(fp);							/* å…³é—­å¤åˆ¶ç›®çš„åœ° */
 	}
 
 	return 0;

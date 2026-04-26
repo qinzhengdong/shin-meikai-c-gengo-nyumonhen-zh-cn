@@ -1,5 +1,5 @@
 /*
-	‘æ‚QÍ‚Ì‚Ü‚Æ‚ß
+	ç¬¬ 2 ç« æ€»ç»“
 */
 
 #include <stdio.h>
@@ -8,24 +8,24 @@ int main(void)
 {
 	int a;
 	int b;
-	double r;	/* ”¼Œa */
+	double r;	/* åŠå¾„ */
 
-	printf("®”a‚Æb‚Ì’lF");
+	printf("æ•´æ•°aå’Œbçš„å€¼ï¼š");
 	scanf("%d%d", &a, &b);
 
-	printf("a + b = %d\n", a + b);	/* ‰ÁZF‚Q€+‰‰Zq */
-	printf("a - b = %d\n", a - b);	/* Œ¸ZF‚Q€-‰‰Zq */
-	printf("a * b = %d\n", a * b);	/* Ï@F‚Q€*‰‰Zq */
-	printf("a / b = %d\n", a / b);	/* ¤@F/‰‰Zq     */
-	printf("a %% b = %d\n", a % b);	/* è—]F%‰‰Zq     */
+	printf("a + b = %d\n", a + b);	/* åŠ ç®—ï¼šï¼’é …+æ¼”ç®—å­ */
+	printf("a - b = %d\n", a - b);	/* æ¸›ç®—ï¼šï¼’é …-æ¼”ç®—å­ */
+	printf("a * b = %d\n", a * b);	/* ç©ã€€ï¼šï¼’é …*æ¼”ç®—å­ */
+	printf("a / b = %d\n", a / b);	/* å•†ã€€ï¼š/æ¼”ç®—å­     */
+	printf("a %% b = %d\n", a % b);	/* å‰°ä½™ï¼š%æ¼”ç®—å­     */
 
 	printf("(a+b)/2 = %d\n",   (a + b) / 2);
-	printf("•½‹Ï’l  = %f\n\n", (double)(a + b) / 2);
+	printf("å¹³å‡å€¤  = %f\n\n", (double)(a + b) / 2);
 
-	printf("”¼ŒaF");
+	printf("åŠå¾„ï¼š");
 	scanf("%lf", &r);
 
-	printf("”¼Œa%.3f‚Ì‰~‚Ì–ÊÏ‚Í%.3f‚Å‚·B\n", r, 3.14 * r * r);
+	printf("åŠå¾„ PH_0__ï¼Œè¡¨é¢ç²—ç³™åº¦ PH_1__ã€‚\n", r, 3.14 * r * r);
 
 	return 0;
 }

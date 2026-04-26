@@ -1,11 +1,11 @@
 /*
-	‚Q“_ŠÔ‚Ì‹——£‚ğ‹‚ß‚é
+	æŸ¥æ‰¾ä¸¤ç‚¹ä¹‹é—´çš„è·ç¦»
 */
 
 #include <math.h>
 #include <stdio.h>
 
-/*--- “_(x1,y1)‚Æ“_(x2,y2)‚Ì‹——£‚ğ‹‚ß‚é ---*/
+/*--- æ±‚ç‚¹ (x1, y1) å’Œç‚¹ (x2, y2) ä¹‹é—´çš„è·ç¦» ---*/
 double dist(double x1, double y1, double x2, double y2)
 {
 	return sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
@@ -13,16 +13,16 @@ double dist(double x1, double y1, double x2, double y2)
 
 int main(void)
 {
-	double x1, y1;		/* “_‚P */
-	double x2, y2;		/* “_‚Q */
+	double x1, y1;		/* ç‚¹ï¼‘ */
+	double x2, y2;		/* ç‚¹ï¼’ */
 
-	printf("‚Q“_ŠÔ‚Ì‹——£‚ğ‹‚ß‚Ü‚·B\n");
-	printf("“_‚Pc‚wÀ•WF");   scanf("%lf", &x1);
-	printf("@@@‚xÀ•WF");   scanf("%lf", &y1);
-	printf("“_‚Qc‚wÀ•WF");   scanf("%lf", &x2);
-	printf("@@@‚xÀ•WF");   scanf("%lf", &y2);
+	printf("ä¸¤ç‚¹ä¹‹é—´çš„è·ç¦»ã€‚\n");
+	printf("ç‚¹ï¼‘â€¦ï¼¸åº§æ¨™ï¼š");   scanf("%lf", &x1);
+	printf("ã€€ã€€ã€€ï¼¹åº§æ¨™ï¼š");   scanf("%lf", &y1);
+	printf("ç‚¹ï¼’â€¦ï¼¸åº§æ¨™ï¼š");   scanf("%lf", &x2);
+	printf("ã€€ã€€ã€€ï¼¹åº§æ¨™ï¼š");   scanf("%lf", &y2);
 
-	printf("‹——£‚Í%f‚Å‚·B\n", dist(x1, y1, x2, y2));
+	printf("è·ç¦» %fã€‚\n", dist(x1, y1, x2, y2));
 
 	return 0;
 }

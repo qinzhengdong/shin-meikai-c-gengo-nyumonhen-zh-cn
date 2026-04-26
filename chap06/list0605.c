@@ -1,17 +1,17 @@
 /*
-	‚×‚«æ‚ğ‹‚ß‚é
+	æ‰¾åˆ°åŠ›é‡
 */
 
 #include <stdio.h>
 
-/*--- x‚Ìnæ‚ğ•Ô‚· ---*/
+/*--- è¿”å› x çš„ n æ¬¡æ–¹ ---*/
 double power(double x, int n)
 {
 	int i;
 	double tmp = 1.0;
 
 	for (i = 1; i <= n; i++)
-		tmp *= x;	/* tmp‚Éx‚ğŠ|‚¯‚é */
+		tmp *= x;	/* å°† tmp ä¹˜ä»¥ x */
 	return tmp;
 }
 
@@ -20,11 +20,11 @@ int main(void)
 	double a;
 	int b;
 
-	printf("a‚Ìbæ‚ğ‹‚ß‚Ü‚·B\n");
-	printf("À”aF");   scanf("%lf", &a);
-	printf("®”bF");   scanf("%d",  &b);
+	printf("ç†æƒ³çš„ b é˜¶ã€‚\n");
+	printf("å®Ÿæ•°aï¼š");   scanf("%lf", &a);
+	printf("æ•´æ•°bï¼š");   scanf("%d",  &b);
 
-	printf("%.2f‚Ì%dæ‚Í%.2f‚Å‚·B\n", a, b, power(a, b));
+	printf("%.2f %d ä¸‹ä¸€ä¸ªæ˜¯ %.2fã€‚\n", a, b, power(a, b));
 
 	return 0;
 }

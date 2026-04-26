@@ -1,22 +1,22 @@
 /*
-	üŒ`’Tõi’€Ÿ’Tõj
+	ç·šå½¢æ¢ç´¢ï¼ˆé€æ¬¡æ¢ç´¢ï¼‰
 */
 
 #include <stdio.h>
 
-#define NUMBER		5		/* —v‘f” */
-#define FAILED		-1		/* ’Tõ¸”s */
+#define NUMBER		5		/* è¦ç´ æ•° */
+#define FAILED		-1		/* æ¢ç´¢å¤±æ•— */
 
-/*--- —v‘f”n‚Ì”z—ñv‚©‚çkey‚Æˆê’v‚·‚é—v‘f‚ğ’Tõ ---*/
+/*--- ä»æ•°ç»„ v ä¸­æœç´¢ä¸ key åŒ¹é…çš„å…ƒç´ åŠå…¶å…ƒç´ ä¸ªæ•° ---*/
 int search(const int v[], int key, int n)
 {
 	int i = 0;
 
 	while (1) {
 		if (i == n)
-			return FAILED;		/* ’Tõ¸”s */
+			return FAILED;		/* æ¢ç´¢å¤±æ•— */
 		if (v[i] == key)
-			return i;			/* ’Tõ¬Œ÷ */
+			return i;			/* æ¢ç´¢æˆåŠŸ */
 		i++;
 	}
 }
@@ -27,18 +27,18 @@ int main(void)
 	int vx[NUMBER];
 
 	for (i = 0; i < NUMBER; i++) {
-		printf("vx[%d]F", i);
+		printf("vx[%d]ï¼š", i);
 		scanf("%d", &vx[i]);
 	}
-	printf("’T‚·’lF");
+	printf("å¯»æ‰¾çš„ä»·å€¼ï¼š");
 	scanf("%d", &ky);
 
-	idx = search(vx, ky, NUMBER);	/* —v‘f”NUMBER‚Ì”z—ñvx‚©‚çky‚ğ’Tõ */
+	idx = search(vx, ky, NUMBER);	/* ä»å…ƒç´ æ•°é‡ä¸º NUMBER çš„æ•°ç»„ vx ä¸­æœç´¢ ky */
 
 	if (idx == FAILED)
-		puts("\a’Tõ‚É¸”s‚µ‚Ü‚µ‚½B");
+		puts("\a æœç´¢å¤±è´¥ã€‚");
 	else
-		printf("%d‚Í%d”Ô–Ú‚É‚ ‚è‚Ü‚·B\n", ky, idx + 1);
+		printf("%d è¿™æ˜¯ %d é—®é¢˜ã€‚\n", ky, idx + 1);
 
 	return 0;
 }

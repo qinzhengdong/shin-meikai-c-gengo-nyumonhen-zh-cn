@@ -1,14 +1,14 @@
 /*
-	•¶š—ñƒŠƒeƒ‰ƒ‹‚Ì‘å‚«‚³‚ğ•\¦‚·‚é
+	æ˜¾ç¤ºå­—ç¬¦ä¸²æ–‡å­—çš„å¤§å°
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	printf("sizeof(\"123\")       %u\n",  (unsigned)sizeof("123"));
-	printf("sizeof(\"AB\\tC\")     %u\n", (unsigned)sizeof("AB\tC"));
-	printf("sizeof(\"abc\\0def\")  %u\n", (unsigned)sizeof("abc\0def"));
+	printf("sizeof(\"123\")      ï¼ %u\n",  (unsigned)sizeof("123"));
+	printf("sizeof(\"AB\\tC\")    ï¼ %u\n", (unsigned)sizeof("AB\tC"));
+	printf("sizeof(\"abc\\0def\") ï¼ %u\n", (unsigned)sizeof("abc\0def"));
 
 	return 0;
 }

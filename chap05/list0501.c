@@ -1,27 +1,27 @@
 /*
-	‚Tl‚ÌŠw¶‚Ì“_”‚ğ“Ç‚İ‚ñ‚Å‡Œv“_‚Æ•½‹Ï“_‚ğ•\¦
+	è¯»å–5åå­¦ç”Ÿçš„æˆç»©å¹¶æ˜¾ç¤ºæ€»åˆ†å’Œå¹³å‡åˆ†
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	int uchida;			/* “à“cŒN‚Ì“_” */
-	int satoh;			/* ²“¡ŒN‚Ì“_” */
-	int sanaka;			/* ²’†ŒN‚Ì“_” */
-	int hiraki;			/* •½–ØŒN‚Ì“_” */
-	int masaki;			/* ^èŒN‚Ì“_” */
-	int sum = 0;		/* ‡Œv“_ */
+	int uchida;			/* å†…ç”°çš„æˆç»© */
+	int satoh;			/* ä½è—¤çš„æˆç»© */
+	int sanaka;			/* è¨é‚£å¡çš„æˆç»© */
+	int hiraki;			/* å¹³æœ¨çš„æˆç»© */
+	int masaki;			/* æ­£å´çš„è¯„åˆ† */
+	int sum = 0;		/* æ€»åˆ† */
 
-	printf("5l‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
-	printf(" 1”ÔF");	scanf("%d", &uchida);	sum += uchida;
-	printf(" 2”ÔF");	scanf("%d", &satoh);	sum += satoh;
-	printf(" 3”ÔF");	scanf("%d", &sanaka);	sum += sanaka;
-	printf(" 4”ÔF");	scanf("%d", &hiraki);	sum += hiraki;
-	printf(" 5”ÔF");	scanf("%d", &masaki);	sum += masaki;
+	printf("å‚åŠ äººæ•°ä¸º5äººã€‚\n");
+	printf(" 1å·ï¼š");	scanf("%d", &uchida);	sum += uchida;
+	printf(" 2å·ï¼š");	scanf("%d", &satoh);	sum += satoh;
+	printf(" 3å·ï¼š");	scanf("%d", &sanaka);	sum += sanaka;
+	printf(" 4å·ï¼š");	scanf("%d", &hiraki);	sum += hiraki;
+	printf(" 5å·ï¼š");	scanf("%d", &masaki);	sum += masaki;
 
-	printf("‡Œv“_F%5d\n", sum);
-	printf("•½‹Ï“_F%5.1f\n", (double)sum / 5);
+	printf("æ€»åˆ†ï¼š%5d\n", sum);
+	printf("å¹³å‡åˆ†ï¼š%5.1f\n", (double)sum / 5);
 
 	return 0;
 }

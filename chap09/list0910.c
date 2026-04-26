@@ -1,10 +1,10 @@
 /*
-	•¶š—ñ“à‚Ì”š•¶š‚ğƒJƒEƒ“ƒg‚·‚é
+	è®¡ç®—å­—ç¬¦ä¸²ä¸­çš„å­—ç¬¦æ•°
 */
 
 #include <stdio.h>
 
-/*--- •¶š—ñs“à‚ÉŠÜ‚Ü‚ê‚é”š•¶š‚ÌoŒ»‰ñ”‚ğ”z—ñcnt‚ÉŠi”[ ---*/
+/*--- å°†å­—ç¬¦ä¸² s ä¸­åŒ…å«çš„æ•°å­—å­—ç¬¦çš„å‡ºç°æ¬¡æ•°å­˜å‚¨åœ¨æ•°ç»„ cnt ä¸­ ---*/
 void str_dcount(const char s[], int cnt[])
 {
 	int i = 0;
@@ -18,17 +18,17 @@ void str_dcount(const char s[], int cnt[])
 int main(void)
 {
 	int  i;
-	int  dcnt[10] = {0};	/* •ª•z */
-	char str[128];			/* •¶š—ñ */
+	int  dcnt[10] = {0};	/* åˆ†å¸ƒ */
+	char str[128];			/* ç»†ç»³ */
 
-	printf("•¶š—ñ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+	printf("è¯·è¾“å…¥å­—ç¬¦ä¸²ï¼š");
 	scanf("%s", str);
 
 	str_dcount(str, dcnt);
 
-	puts("”š•¶š‚ÌoŒ»‰ñ”");
+	puts("æ•°å­—å­—ç¬¦å‡ºç°çš„æ¬¡æ•°");
 	for (i = 0; i < 10; i++)
-		printf("'%d'F%d\n", i, dcnt[i]);
+		printf("'%d'ï¼š%d\n", i, dcnt[i]);
 
 	return 0;
 }

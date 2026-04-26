@@ -1,12 +1,12 @@
 /*
-	Šw¶‚Ì“_”‚ğ“Ç‚İ‚ñ‚Å¸‡‚Éƒ\[ƒg
+	åŠ è½½å­¦ç”Ÿæˆç»©å¹¶æŒ‰å‡åºæ’åº
 */
 
 #include <stdio.h>
 
-#define NUMBER	5		/* l” */
+#define NUMBER	5		/* äººæ•° */
 
-/*--- px‚Æpy‚ªw‚·ƒIƒuƒWƒFƒNƒg‚Ì’l‚ğŒğŠ· ---*/
+/*---äº¤æ¢pxå’ŒpyæŒ‡å‘çš„å¯¹è±¡çš„å€¼---*/
 void swap(int *px, int *py)
 {
 	int temp = *px;
@@ -14,7 +14,7 @@ void swap(int *px, int *py)
 	*py = temp;
 }
 
-/*--- ƒoƒuƒ‹ƒ\[ƒg ---*/
+/*--- å†’æ³¡æ’åº ---*/
 void bsort(int a[], int n)
 {
 	int i, j;
@@ -28,19 +28,19 @@ void bsort(int a[], int n)
 int main(void)
 {
 	int i;
-	int point[NUMBER];		/* NUMBERl‚ÌŠw¶‚Ì“_” */
+	int point[NUMBER];		/* NUMBERä¸ªå­¦ç”Ÿæˆç»© */
 
-	printf("%dl‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n", NUMBER);
+	printf("ç®€ä»‹ %d äººåˆ†æ•°ã€‚\n", NUMBER);
 	for (i = 0; i < NUMBER; i++) {
-		printf("%2d”ÔF", i + 1);
+		printf("%2då·ï¼š", i + 1);
 		scanf("%d", &point[i]);
 	}
 
-	bsort(point, NUMBER);		/* ƒ\[ƒg */
+	bsort(point, NUMBER);		/* ç§ç±» */
 
-	puts("¸‡‚Éƒ\[ƒg‚µ‚Ü‚µ‚½B");
+	puts("æ’åºé¡ºåºã€‚");
 	for (i = 0; i < NUMBER; i++)
-		printf("%2d”ÔF%d\n", i + 1, point[i]);
+		printf("%2då·ï¼š%d\n", i + 1, point[i]);
 
 	return 0;
 }

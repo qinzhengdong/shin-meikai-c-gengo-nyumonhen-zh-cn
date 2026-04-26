@@ -1,10 +1,10 @@
 /*
-	ŠKæ‚ğ‹‚ß‚é
+	æ±‚é˜¶ä¹˜
 */
 
 #include <stdio.h>
 
-/*--- ŠKæ’l‚ğ•Ô‚· ---*/
+/*--- è¿”å›é˜¶ä¹˜å€¼ ---*/
 int factorial(int n)
 {
 	if (n > 0)
@@ -17,10 +17,10 @@ int main(void)
 {
 	int num;
 
-	printf("®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+	printf("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
 	scanf("%d", &num);
 
-	printf("%d‚ÌŠKæ‚Í%d‚Å‚·B\n", num, factorial(num));
+	printf("%d ä¸ %d ç›¸åŒã€‚\n", num, factorial(num));
 
 	return 0;
 }

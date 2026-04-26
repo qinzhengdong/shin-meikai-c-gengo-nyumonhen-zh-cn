@@ -1,5 +1,5 @@
 /*
-	switch•¶‚Ì“®ì‚ğŠm”F‚·‚éƒvƒƒOƒ‰ƒ€
+	æ£€æŸ¥switchè¯­å¥æ“ä½œçš„ç¨‹åº
 */
 
 #include <stdio.h>
@@ -8,7 +8,7 @@ int main(void)
 {
 	int sw;
 
-	printf("®”F");
+	printf("æ•´æ•°ï¼š");
 	scanf("%d", &sw);
 
 	switch (sw) {

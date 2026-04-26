@@ -1,10 +1,10 @@
 /*
-	O‚Â‚Ì®”‚ÌÅ‘å’l‚ğ‹‚ß‚é
+	æ±‚ä¸‰ä¸ªæ•´æ•°çš„æœ€å¤§å€¼
 */
 
 #include <stdio.h>
 
-/*--- O‚Â‚Ì®”‚ÌÅ‘å’l‚ğ•Ô‚· ---*/
+/*--- è¿”å›ä¸‰ä¸ªæ•´æ•°çš„æœ€å¤§å€¼ ---*/
 int max3(int a, int b, int c)
 {
 	int max = a;
@@ -18,12 +18,12 @@ int main(void)
 {
 	int a, b, c;
 
-	puts("O‚Â‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-	printf("®”aF");	  scanf("%d", &a);
-	printf("®”bF");	  scanf("%d", &b);
-	printf("®”cF");	  scanf("%d", &c);
+	puts("è¾“å…¥ 3 ä¸ªæ•´æ•°ã€‚");
+	printf("æ•´æ•°aï¼š");	  scanf("%d", &a);
+	printf("æ•´æ•°bï¼š");	  scanf("%d", &b);
+	printf("æ•´æ•°cï¼š");	  scanf("%d", &c);
 
-	printf("Å‘å’l‚Í%d‚Å‚·B\n", max3(a, b, c));
+	printf("æœ€å¤§åŠŸç‡ %dã€‚\n", max3(a, b, c));
 
 	return 0;
 }

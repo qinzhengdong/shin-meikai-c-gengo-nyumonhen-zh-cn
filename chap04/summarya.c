@@ -1,5 +1,5 @@
 /*
-	‘æ‚SÍ‚Ì‚Ü‚Æ‚ßi•Ê‰ğj
+	ç¬¬4ç« æ€»ç»“ï¼ˆå•ç‹¬è¯´æ˜ï¼‰
 */
 
 #include <stdio.h>
@@ -10,7 +10,7 @@ int main(void)
 	int x, y, z;
 
 	do {
-		printf("0`100‚Ì®”’lF");
+		printf("0 åˆ° 100 ä¹‹é—´çš„æ•´æ•°å€¼ï¼š");
 		scanf("%d", &x);
 	} while (!(x >= 0 && x <= 100));
 
@@ -19,15 +19,15 @@ int main(void)
 	while (y >= 0)
 		printf("%d %d\n", y--, ++z);
 
-	printf("c‰¡‚ª®”‚Å–ÊÏ‚ª%d"
-		   "‚Ì’·•ûŒ`‚Ì•Ó‚Ì’·‚³F\n", x);
+	printf("é•¿å®½å‡ä¸ºæ•´æ•°ï¼Œé¢ç§¯ä¸º%d"
+		   "çŸ©å½¢è¾¹é•¿ï¼š\n", x);
 	for (i = 1; i < x; i++) {
-		if (i * i > x) break;      /* break•¶    */
-		if (x % i != 0) continue;  /* continue•¶ */
-		printf("%d ~ %d\n", i, x / i);
+		if (i * i > x) break;      /* breakæ–‡    */
+		if (x % i != 0) continue;  /* continueæ–‡ */
+		printf("%d Ã— %d\n", i, x / i);
 	}
 
-	puts("5s7—ñ‚ÌƒAƒXƒeƒŠƒXƒN");
+	puts("5 è¡Œ 7 åˆ—æ˜Ÿå·");
 	for (i = 1; i <= 5; i++) {
 		for (j = 1; j <= 7; j++)
 			putchar('*');

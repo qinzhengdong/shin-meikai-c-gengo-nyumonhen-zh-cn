@@ -1,12 +1,12 @@
 /*
-	‰pŒê‚Ì“_”‚Æ”Šw‚Ì“_”‚ÌÅ‚“_‚ğ‹‚ß‚é
+	æ‰¾å‡ºæœ€é«˜çš„è‹±è¯­åˆ†æ•°å’Œæ•°å­¦åˆ†æ•°
 */
 
 #include <stdio.h>
 
-#define NUMBER	5		/* Šw¶‚Ìl” */
+#define NUMBER	5		/* å­¦ç”Ÿäººæ•° */
 
-/*--- —v‘f”n‚Ì”z—ñv‚ÌÅ‘å’l‚ğ•Ô‚· ---*/
+/*--- è¿”å›åŒ…å« n ä¸ªå…ƒç´ çš„æ•°ç»„ v çš„æœ€å¤§å€¼ ---*/
 int max_of(int v[], int n)
 {
 	int i;
@@ -21,20 +21,20 @@ int max_of(int v[], int n)
 int main(void)
 {
 	int i;
-	int eng[NUMBER];		/* ‰pŒê‚Ì“_” */
-	int mat[NUMBER];		/* ”Šw‚Ì“_” */
-	int max_e, max_m;		/* Å‚“_ */
+	int eng[NUMBER];		/* è‹±è¯­æˆç»© */
+	int mat[NUMBER];		/* æ•°å­¦æˆç»© */
+	int max_e, max_m;		/* æœ€é«˜ç‚¹ */
 
-	printf("%dl‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n", NUMBER);
+	printf("ç®€ä»‹ %d äººåˆ†æ•°ã€‚\n", NUMBER);
 	for (i = 0; i < NUMBER; i++) {
-		printf("[%d] ‰pŒêF", i + 1);  scanf("%d", &eng[i]);
-		printf( "    ”ŠwF");         scanf("%d", &mat[i]);
+		printf("[%d] è‹±èªï¼š", i + 1);  scanf("%d", &eng[i]);
+		printf( "    æ•°å­¦ï¼š");         scanf("%d", &mat[i]);
 	}
-	max_e = max_of(eng, NUMBER);	/* ‰pŒê‚ÌÅ‚“_ */
-	max_m = max_of(mat, NUMBER);	/* ”Šw‚ÌÅ‚“_ */
+	max_e = max_of(eng, NUMBER);	/* è‹±è¯­æœ€é«˜åˆ† */
+	max_m = max_of(mat, NUMBER);	/* æ•°å­¦çš„æœ€é«˜ç‚¹ */
 
-	printf("‰pŒê‚ÌÅ‚“_%d\n", max_e);
-	printf("”Šw‚ÌÅ‚“_%d\n", max_m);
+	printf("è‹±è¯­æœ€é«˜åˆ† = %d\n", max_e);
+	printf("æ•°å­¦æœ€é«˜åˆ† = %d\n", max_m);
 
 	return 0;
 }

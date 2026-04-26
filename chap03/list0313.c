@@ -1,5 +1,5 @@
 /*
-	“Ç‚Ýž‚ñ‚¾ŽO‚Â‚Ì®”’l‚ÌÅ‘å’l‚ð‹‚ß‚Ä•\Ž¦
+	æŸ¥æ‰¾å¹¶æ˜¾ç¤ºè¯»å–çš„ä¸‰ä¸ªæ•´æ•°å€¼ä¸­çš„æœ€å¤§å€¼
 */
 
 #include <stdio.h>
@@ -8,16 +8,16 @@ int main(void)
 {
 	int n1, n2, n3, max;
 
-	puts("ŽO‚Â‚Ì®”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-	printf("®”‚PF");   scanf("%d", &n1);
-	printf("®”‚QF");   scanf("%d", &n2);
-	printf("®”‚RF");   scanf("%d", &n3);
+	puts("è¾“å…¥ 3 ä¸ªæ•´æ•°ã€‚");
+	printf("æ•´æ•°ï¼‘ï¼š");   scanf("%d", &n1);
+	printf("æ•´æ•°ï¼’ï¼š");   scanf("%d", &n2);
+	printf("æ•´æ•°ï¼“ï¼š");   scanf("%d", &n3);
 
 	max = n1;
 	if (n2 > max) max = n2;
 	if (n3 > max) max = n3;
 
-	printf("Å‘å’l‚Í%d‚Å‚·B\n", max);
+	printf("æœ€å¤§åŠŸçŽ‡ %dã€‚\n", max);
 
 	return 0;
 }

@@ -1,10 +1,10 @@
 /*
-	¯•Êq‚Ì—LŒø”ÍˆÍ‚ğŠm”F‚·‚é
+	æ£€æŸ¥æ ‡è¯†ç¬¦çš„èŒƒå›´
 */
 
 #include <stdio.h>
 
-int x = 75;						/* ‚`Fƒtƒ@ƒCƒ‹—LŒø”ÍˆÍ */
+int x = 75;						/* Aï¼šæ–‡ä»¶æœ‰æ•ˆèŒƒå›´ */
 
 void print_x(void)
 {
@@ -14,14 +14,14 @@ void print_x(void)
 int main(void)
 {
 	int i;
-	int x = 999;				/* ‚aFƒuƒƒbƒN—LŒø”ÍˆÍ */
+	int x = 999;				/* Bï¼šé˜»æŒ¡æœ‰æ•ˆèŒƒå›´ */
 
 	print_x();
 
 	printf("x = %d\n", x);
 
 	for (i = 0; i < 5; i++) {
-		int x = i * 100;		/* ‚bFƒuƒƒbƒN—LŒø”ÍˆÍ */
+		int x = i * 100;		/* Cï¼šæ ¼æŒ¡æœ‰æ•ˆèŒƒå›´ */
 		printf("x = %d\n", x);
 	}
 

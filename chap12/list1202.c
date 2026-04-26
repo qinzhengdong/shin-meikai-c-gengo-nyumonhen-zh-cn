@@ -1,33 +1,33 @@
 /*
-	Šw¶‚ğ•\‚·\‘¢‘Ì‚É‚æ‚é²’†ŒN
+	Sanaka-kun ä½¿ç”¨ä»£è¡¨å­¦ç”Ÿçš„ç»“æ„
 */
 
 #include <stdio.h>
 #include <string.h>
 
-#define NAME_LEN	64		/* –¼‘O‚Ì•¶š” */
+#define NAME_LEN	64		/* åç§°ä¸­çš„å­—ç¬¦æ•° */
 
-/*=== Šw¶‚ğ•\‚·\‘¢‘Ì ===*/
+/*===ä»£è¡¨å­¦ç”Ÿçš„ç»“æ„===*/
 struct student {
-	char  name[NAME_LEN];	/* –¼‘O */
-	int   height;			/* g’· */
-	float weight;			/* ‘Ìd */
-	long  schols;			/* §Šw‹à */
+	char  name[NAME_LEN];	/* åå‰ */
+	int   height;			/* èº«é•· */
+	float weight;			/* ä½“é‡ */
+	long  schols;			/* å¥¨å­¦é‡‘ */
 };
 
 int main(void)
 {
 	struct student sanaka;
 
-	strcpy(sanaka.name, "Sanaka");	/* –¼‘O */
-	sanaka.height = 175;			/* g’· */
-	sanaka.weight = 62.5;			/* ‘Ìd */
-	sanaka.schols = 73000;			/* §Šw‹à */
+	strcpy(sanaka.name, "Sanaka");	/* åå‰ */
+	sanaka.height = 175;			/* èº«é•· */
+	sanaka.weight = 62.5;			/* ä½“é‡ */
+	sanaka.schols = 73000;			/* å¥¨å­¦é‡‘ */
 
-	printf("@–¼  %s\n",   sanaka.name);
-	printf("g@’·  %d\n",   sanaka.height);
-	printf("‘Ì@d  %.1f\n", sanaka.weight);
-	printf("§Šw‹à  %ld\n",  sanaka.schols);
+	printf("æ°ã€€å ï¼ %s\n",   sanaka.name);
+	printf("èº«ã€€é•· ï¼ %d\n",   sanaka.height);
+	printf("ä½“ã€€é‡ ï¼ %.1f\n", sanaka.weight);
+	printf("å¥¨å­¦é‡‘ ï¼ %ld\n",  sanaka.schols);
 
 	return 0;
 }

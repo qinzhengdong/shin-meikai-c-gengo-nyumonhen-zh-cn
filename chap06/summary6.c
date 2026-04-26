@@ -1,10 +1,10 @@
 /*
-	‚QŸŒ³”z—ñ‚Ì‘S\¬—v‘f‚Ì‡Œv‚ğ‹‚ß‚é
+	æ±‚äºŒç»´æ•°ç»„æ‰€æœ‰åˆ†é‡çš„æ€»å’Œ
 */
 
 #include <stdio.h>
 
-/* ‚QŸŒ³”z—ñ‚Ì‘S\¬—v‘f‚Ì’l‚ğ•\¦ */
+/* æ˜¾ç¤ºäºŒç»´æ•°ç»„æ‰€æœ‰åˆ†é‡çš„å€¼ */
 void put_ary2D(const int m[][3], int n)
 {
 	int i, j;
@@ -16,7 +16,7 @@ void put_ary2D(const int m[][3], int n)
 	}
 }
 
-/* ‚QŸŒ³”z—ña‚Ì‘S\¬—v‘f‚Ì‡Œv‚ğ•Ô‚· */
+/* è¿”å›äºŒç»´æ•°ç»„ a æ‰€æœ‰å…ƒç´ çš„å’Œ */
 int sum_ary2D(const int a[][3], int n)
 {
 	int i, j;
@@ -33,13 +33,13 @@ int main(void)
 	int m1[4][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12} };
 	int m2[2][3] = { {1, 3, 5}, {7, 9, 11} };
 
-	puts("‚QŸŒ³”z—ñm1");
+	puts("äºŒç»´æ•°ç»„ m1");
 	put_ary2D(m1, 4);
-	printf("‡Œv‚Í%d‚Å‚·B\n", sum_ary2D(m1, 4));
+	printf("æ€»è®¡ä¸º %dã€‚\n", sum_ary2D(m1, 4));
 
-	puts("‚QŸŒ³”z—ñm2");
+	puts("äºŒç»´æ•°ç»„ m2");
 	put_ary2D(m2, 2);
-	printf("‡Œv‚Í%d‚Å‚·B\n", sum_ary2D(m2, 2));
+	printf("æ€»è®¡ä¸º %dã€‚\n", sum_ary2D(m2, 2));
 
 	return 0;
 }

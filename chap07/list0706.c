@@ -1,10 +1,10 @@
 /*
-	ƒrƒbƒg’PˆÊ‚Ì˜_—‰‰Z
+	æŒ‰ä½é€»è¾‘è¿ç®—
 */
 
 #include <stdio.h>
 
-/*--- ®”x’†‚ÌƒZƒbƒg‚³‚ê‚½ƒrƒbƒg”‚ğ•Ô‚· ---*/
+/*--- è¿”å›æ•´æ•° x ä¸­è®¾ç½®çš„ä½æ•° ---*/
 int count_bits(unsigned x)
 {
 	int bits = 0;
@@ -15,13 +15,13 @@ int count_bits(unsigned x)
 	return bits;
 }
 
-/*--- unsignedŒ^‚Ìƒrƒbƒg”‚ğ•Ô‚· ---*/
+/*--- è¿”å›æ— ç¬¦å·ç±»å‹çš„ä½æ•° ---*/
 int int_bits(void)
 {
 	return count_bits(~0U);
 }
 
-/*--- unsignedŒ^‚Ìƒrƒbƒg“à—e‚ğ•\¦ ---*/
+/*--- æ˜¾ç¤ºæ— ç¬¦å·ç±»å‹çš„ä½å†…å®¹ ---*/
 void print_bits(unsigned x)
 {
 	int i;
@@ -33,17 +33,17 @@ int main(void)
 {
 	unsigned a, b;
 
-	printf("”ñ•‰‚Ì®”‚ğ“ñ‚Â“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
+	printf("ä¸å¯è½¬ç§»çš„æ•´æ•°ã€‚\n");
 	printf("a : ");   scanf("%u", &a);
 	printf("b : ");   scanf("%u", &b);
 
 	printf("\na     = ");   print_bits(a);
 	printf("\nb     = ");   print_bits(b);
-	printf("\na & b = ");   print_bits(a & b);		/* a‚Æb‚Ì˜_—Ï */
-	printf("\na | b = ");   print_bits(a | b);		/* a‚Æb‚Ì˜_—˜a */
-	printf("\na ^ b = ");   print_bits(a ^ b);		/* a‚Æb‚Ì”r‘¼“I˜_—˜a */
-	printf("\n~a    = ");   print_bits(~a);			/* a‚Ì‚P‚Ì•â” */
-	printf("\n~b    = ");   print_bits(~b);			/* b‚Ì‚P‚Ì•â” */
+	printf("\na & b = ");   print_bits(a & b);		/* a å’Œ b çš„é€»è¾‘ç§¯ */
+	printf("\na | b = ");   print_bits(a | b);		/* a å’Œ b çš„é€»è¾‘å’Œ */
+	printf("\na ^ b = ");   print_bits(a ^ b);		/* a å’Œ b çš„å¼‚æˆ– */
+	printf("\n~a    = ");   print_bits(~a);			/* ä¸€ä¸ªäººçš„è¡¥è¯­ */
+	printf("\n~b    = ");   print_bits(~b);			/* b çš„ 1 çš„è¡¥ç  */
 	putchar('\n');
 
 	return 0;

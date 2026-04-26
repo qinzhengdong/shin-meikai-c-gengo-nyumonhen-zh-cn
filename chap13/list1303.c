@@ -1,5 +1,5 @@
 /*
-	ƒvƒƒOƒ‰ƒ€‚ðŽÀs‚µ‚½“ú•tEŽž‚ðƒtƒ@ƒCƒ‹‚É‘‚«o‚·
+	å°†ç¨‹åºæ‰§è¡Œçš„æ—¥æœŸå’Œæ—¶é—´å¯¼å‡ºåˆ°æ–‡ä»¶
 */
 
 #include <time.h>
@@ -8,17 +8,17 @@
 int main(void)
 {
 	FILE *fp;
-	time_t current = time(NULL);				/* Œ»Ý‚Ì—ïŽž */
-	struct tm *timer = localtime(&current);		/* —v‘f•Ê‚ÌŽži’n•ûŽžj*/
+	time_t current = time(NULL);				/* å½“å‰æ—¥åŽ†æ—¶é—´ */
+	struct tm *timer = localtime(&current);		/* å„å…ƒç´ çš„æ—¶é—´ï¼ˆå½“åœ°æ—¶é—´ï¼‰*/
 
-	if ((fp = fopen("dt_dat", "w")) == NULL)				/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ðƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	if ((fp = fopen("dt_dat", "w")) == NULL)				/* æ‰“å¼€ */
+		printf("éžæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
-		printf("Œ»Ý‚Ì“ú•tEŽž‚ð‘‚«o‚µ‚Ü‚µ‚½B\n");
+		printf("æˆ‘å®Œæˆæ‹ç…§ä¹‹å‰çš„æ—¥æœŸå’Œæ—¶é—´ã€‚\n");
 		fprintf(fp, "%d %d %d %d %d %d\n",
 			timer->tm_year + 1900, timer->tm_mon + 1, timer->tm_mday,
 			timer->tm_hour,		   timer->tm_min,	  timer->tm_sec  );
-		fclose(fp);											/* ƒNƒ[ƒY */
+		fclose(fp);											/* å…³é—­ */
 	}
 
 	return 0;

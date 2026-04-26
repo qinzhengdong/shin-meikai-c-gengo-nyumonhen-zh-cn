@@ -1,5 +1,5 @@
 /*
-	g’·‚Æ‘Ìd‚ğ“Ç‚İ‚ñ‚Å•½‹Ï’l‚ğ‹‚ß‚Ä•\¦‚·‚é
+	æµ‹é‡èº«é«˜ã€ä½“é‡ã€è®¡ç®—å¹³å‡å€¼
 */
 
 #include <stdio.h>
@@ -7,14 +7,14 @@
 int main(void)
 {
 	FILE   *fp;
-	int    ninzu = 0;			/* l” */
-	char   name[100];			/* –¼‘O */
-	double height, weight;		/* g’·E‘Ìd */
-	double hsum = 0.0;			/* g’·‚Ì‡Œv */
-	double wsum = 0.0;			/* ‘Ìd‚Ì‡Œv */
+	int    ninzu = 0;			/* äººæ•° */
+	char   name[100];			/* åå‰ */
+	double height, weight;		/* èº«é«˜/ä½“é‡ */
+	double hsum = 0.0;			/* æ€»é«˜åº¦ */
+	double wsum = 0.0;			/* æ€»é‡é‡ */
 
-	if ((fp = fopen("hw.dat", "r")) == NULL)				/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	if ((fp = fopen("hw.dat", "r")) == NULL)				/* æ‰“å¼€ */
+		printf("éæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
 		while (fscanf(fp, "%s%lf%lf", name, &height, &weight) == 3) {
 			printf("%-10s %5.1f %5.1f\n", name, height, weight);
@@ -23,8 +23,8 @@ int main(void)
 			wsum += weight;
 		}
 		printf("----------------------\n");
-		printf("•½‹Ï       %5.1f %5.1f\n", hsum / ninzu, wsum / ninzu);
-		fclose(fp);											/* ƒNƒ[ƒY */
+		printf("å¹³å‡       %5.1f %5.1f\n", hsum / ninzu, wsum / ninzu);
+		fclose(fp);											/* å…³é—­ */
 	}
 
 	return 0;

@@ -1,5 +1,5 @@
 /*
-	’·•ûŒ`‚ğ•`‰æ
+	ç”»ä¸€ä¸ªçŸ©å½¢
 */
 
 #include <stdio.h>
@@ -9,14 +9,14 @@ int main(void)
 	int i, j;
 	int height, width;
 
-	puts("’·•ûŒ`‚ğì‚è‚Ü‚·B");
-	printf("‚‚³F");   scanf("%d", &height);
-	printf("‰¡•F");   scanf("%d", &width);
+	puts("å•ä¸ªçŸ©å½¢ã€‚");
+	printf("é«˜åº¦ï¼š");   scanf("%d", &height);
+	printf("æ¨ªå¹…ï¼š");   scanf("%d", &width);
 
-	for (i = 1; i <= height; i++) {			/* ’·•ûŒ`‚Íheights */
-		for (j = 1; j <= width; j++)		/* Šes‚ÉwidthŒÂ‚Ì'*'‚ğ•\¦ */
+	for (i = 1; i <= height; i++) {			/* çŸ©å½¢æ˜¯é«˜åº¦è¡Œ */
+		for (j = 1; j <= width; j++)		/* æ¯è¡Œæ˜¾ç¤ºå®½åº¦â€œ*â€ */
 			putchar('*');
-		putchar('\n');						/* ‰üs */
+		putchar('\n');						/* æ”¹è¡Œ */
 	}
 	return 0;
 }

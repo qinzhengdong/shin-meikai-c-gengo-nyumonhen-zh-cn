@@ -1,5 +1,5 @@
 /*
-	•‚“®¬”“_”‚ğ‰½“x‚à‰ÁZ
+	ä¸€éåˆä¸€éåœ°æ·»åŠ æµ®ç‚¹æ•°
 */
 
 #include <stdio.h>
@@ -7,16 +7,16 @@
 int main(void)
 {
 	int i, no;
-	float value;		/* ’l */
-	float sum = 0.0f;	/* ‡Œv */
+	float value;		/* å€¤ */
+	float sum = 0.0f;	/* æ€»è®¡ */
 
-	puts("•‚“®¬”“_”‚ğ‰½“x‚à‰ÁZ‚µ‚Ü‚·B");
-	printf("’lF");     scanf("%f", &value);
-	printf("‰ñ”F");   scanf("%d", &no);
+	puts("ä¸€æ¬¡åˆä¸€æ¬¡ç›¸åŠ çš„æµ®ç‚¹æ•°ã€‚");
+	printf("å€¤ï¼š");     scanf("%f", &value);
+	printf("å›æ•°ï¼š");   scanf("%d", &no);
 
 	for (i = 0; i < no; i++)
 		sum += value;
-	printf("‰ÁZŒ‹‰Ê‚Í%f‚Å‚·B\n", sum);
+	printf("åŠ æ³•ç»“æœä¸º %fã€‚\n", sum);
 
 	return 0;
 }

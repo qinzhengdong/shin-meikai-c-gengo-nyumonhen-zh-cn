@@ -1,12 +1,12 @@
 /*
-	Šw¶‚Ìg’·‚ğ“Ç‚İ‚ñ‚Åƒ\[ƒg
+	åŠ è½½å¹¶æ’åºå­¦ç”Ÿèº«é«˜
 */
 
 #include <stdio.h>
 
-#define NUMBER	5		/* l” */
+#define NUMBER	5		/* äººæ•° */
 
-/*--- ƒoƒuƒ‹ƒ\[ƒg ---*/
+/*--- å†’æ³¡æ’åº ---*/
 void bsort(int a[], int n)
 {
 	int i, j;
@@ -25,19 +25,19 @@ void bsort(int a[], int n)
 int main(void)
 {
 	int i;
-	int height[NUMBER];		/* NUMBERl‚ÌŠw¶‚Ìg’· */
+	int height[NUMBER];		/* NUMBER ä¸ªå­¦ç”Ÿèº«é«˜ */
 
-	printf("%dl‚Ìg’·‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n", NUMBER);
+	printf("%dæ­¤äººçš„èº«é«˜ã€‚\n", NUMBER);
 	for (i = 0; i < NUMBER; i++) {
-		printf("%2d”ÔF", i + 1);
+		printf("%2då·ï¼š", i + 1);
 		scanf("%d", &height[i]);
 	}
 
-	bsort(height, NUMBER);		/* ƒ\[ƒg */
+	bsort(height, NUMBER);		/* ç§ç±» */
 
-	puts("¸‡‚Éƒ\[ƒg‚µ‚Ü‚µ‚½B");
+	puts("æ’åºé¡ºåºã€‚");
 	for (i = 0; i < NUMBER; i++)
-		printf("%2d”ÔF%d\n", i + 1, height[i]);
+		printf("%2då·ï¼š%d\n", i + 1, height[i]);
 
 	return 0;
 }

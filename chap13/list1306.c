@@ -1,5 +1,5 @@
 /*
-	ƒtƒ@ƒCƒ‹‚Ì’†g‚ğ•\¦‚·‚é
+	æ˜¾ç¤ºæ–‡ä»¶å†…å®¹
 */
 
 #include <stdio.h>
@@ -8,17 +8,17 @@ int main(void)
 {
 	int  ch;
 	FILE *fp;
-	char fname[FILENAME_MAX];		/* ƒtƒ@ƒCƒ‹–¼ */
+	char fname[FILENAME_MAX];		/* æ–‡ä»¶å */
 
-	printf("ƒtƒ@ƒCƒ‹–¼F");
+	printf("æ–‡ä»¶åï¼š");
 	scanf("%s", fname);
 
-	if ((fp = fopen(fname, "r")) == NULL)					/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	if ((fp = fopen(fname, "r")) == NULL)					/* æ‰“å¼€ */
+		printf("éæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
 		while ((ch = fgetc(fp)) != EOF)
 			putchar(ch);
-		fclose(fp);											/* ƒNƒ[ƒY */
+		fclose(fp);											/* å…³é—­ */
 	}
 
 	return 0;

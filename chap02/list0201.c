@@ -1,5 +1,5 @@
 /*
-	“Ç‚İ‚ñ‚¾“ñ‚Â‚Ì®”’l‚Ì˜aE·EÏE¤Eè—]‚ğ•\¦
+	ä¸¤ä¸ªæ•´æ•°çš„å’Œã€å·®ã€å·®ã€å•†ä½™æ•°
 */
 
 #include <stdio.h>
@@ -8,9 +8,9 @@ int main(void)
 {
 	int vx, vy;
 
-	puts("“ñ‚Â‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-	printf("®”vxF");   scanf("%d", &vx);
-	printf("®”vyF");   scanf("%d", &vy);
+	puts("è¾“å…¥ä¸¤ä¸ªæ•´æ•°ã€‚");
+	printf("æ•´æ•°vxï¼š");   scanf("%d", &vx);
+	printf("æ•´æ•°vyï¼š");   scanf("%d", &vy);
 
 	printf("vx + vy = %d\n",  vx + vy);
 	printf("vx - vy = %d\n",  vx - vy);

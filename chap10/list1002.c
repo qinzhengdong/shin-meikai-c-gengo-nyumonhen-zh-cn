@@ -1,5 +1,5 @@
 /*
-	ƒIƒuƒWƒFƒNƒg‚ÌƒAƒhƒŒƒX‚ğ•\¦‚·‚é
+	æ˜¾ç¤ºå¯¹è±¡çš„åœ°å€
 */
 
 #include <stdio.h>
@@ -10,11 +10,11 @@ int main(void)
 	double x;
 	int    a[3];
 
-	printf("n   ‚ÌƒAƒhƒŒƒXF%p\n", &n);
-	printf("x   ‚ÌƒAƒhƒŒƒXF%p\n", &x);
-	printf("a[0]‚ÌƒAƒhƒŒƒXF%p\n", &a[0]);
-	printf("a[1]‚ÌƒAƒhƒŒƒXF%p\n", &a[1]);
-	printf("a[2]‚ÌƒAƒhƒŒƒXF%p\n", &a[2]);
+	printf("n çš„åœ°å€ï¼š%p\n", &n);
+	printf("x çš„åœ°å€ï¼š%p\n", &x);
+	printf("a[0]çš„åœ°å€ï¼š%p\n", &a[0]);
+	printf("a[1]çš„åœ°å€ï¼š%p\n", &a[1]);
+	printf("a[2]çš„åœ°å€ï¼š%p\n", &a[2]);
 
 	return 0;
 }

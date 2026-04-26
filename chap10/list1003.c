@@ -1,34 +1,34 @@
 /*
-	ƒ|ƒCƒ“ƒ^‚É‚æ‚Á‚Äg’·‚ğŠÔÚ“I‚É‘€ì‚·‚é
+	é€šè¿‡æŒ‡é’ˆé—´æ¥æ“çºµé«˜åº¦
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	int sato   = 178;	/* ²“¡GjŒN‚Ìg’· */
-	int sanaka = 175;	/* ²’†rÆŒN‚Ìg’· */
-	int masaki = 179;	/* ^èGFŒN‚Ìg’· */
+	int sato   = 178;	/* ä½è—¤å®çš„èº«é«˜ */
+	int sanaka = 175;	/* çœŸä¸­æ•ä¹Ÿèº«é«˜ */
+	int masaki = 179;	/* æ­£æœ¨å¼˜é«˜èº«é«˜ */
 
 	int *isako, *hiroko;
 
-	isako  = &sato;			/* isako ‚Ísato@‚ğw‚·i²“¡ŒN‚ªD‚«j*/
-	hiroko = &masaki;		/* hiroko‚Ímasaki‚ğw‚·i^èŒN‚ªD‚«j*/
+	isako  = &sato;			/* isako æŒ‡çš„æ˜¯ satoï¼ˆæˆ‘å–œæ¬¢ satoï¼‰*/
+	hiroko = &masaki;		/* hiroko æŒ‡çš„æ˜¯ masakiï¼ˆæˆ‘å–œæ¬¢ Masakiï¼‰*/
 
-	printf("‚¢‚³q‚³‚ñ‚ÌD‚«‚Èl‚Ìg’·F%d\n", *isako);
-	printf("‚Ğ‚ëq‚³‚ñ‚ÌD‚«‚Èl‚Ìg’·F%d\n", *hiroko);
+	printf("Isako æœ€å–œæ¬¢çš„äººçš„èº«é«˜ï¼š%d\n", *isako);
+	printf("å¼˜å­æœ€å–œæ¬¢çš„äººçš„èº«é«˜ï¼š%d\n", *hiroko);
 
-	isako = &sanaka;		/* isako ‚Ísanaka‚ğw‚·i‹C‚ª•Ï‚í‚Á‚½j*/
+	isako = &sanaka;		/* isako æŒ‡çš„æ˜¯ sanakaï¼ˆæˆ‘æ”¹å˜ä¸»æ„äº†ï¼‰*/
 
-	*hiroko = 180;			/* hiroko‚Ìw‚·ƒIƒuƒWƒFƒNƒg‚É180‚ğ‘ã“ü */
-							/* ‚Ğ‚ëq‚³‚ñ‚ÌD‚«‚Èl‚Ìg’·‚ğ‘‚«‚©‚¦‚é */
+	*hiroko = 180;			/* å°† 180 èµ‹å€¼ç»™ hiroko æŒ‡å‘çš„å¯¹è±¡ */
+							/* æ”¹å†™å¼˜å­æœ€çˆ±çš„äººçš„èº«é«˜ */
 
 	putchar('\n');
-	printf("²“¡ŒN‚Ìg’·F%d\n", sato);
-	printf("²’†ŒN‚Ìg’·F%d\n", sanaka);
-	printf("^èŒN‚Ìg’·F%d\n", masaki);
-	printf("‚¢‚³q‚³‚ñ‚ÌD‚«‚Èl‚Ìg’·F%d\n", *isako);
-	printf("‚Ğ‚ëq‚³‚ñ‚ÌD‚«‚Èl‚Ìg’·F%d\n", *hiroko);
+	printf("ä½è—¤çš„èº«é«˜ï¼š%d\n", sato);
+	printf("è¨é‚£å¡çš„èº«é«˜ï¼š%d\n", sanaka);
+	printf("æ­£æ ‘çš„èº«é«˜ï¼š%d\n", masaki);
+	printf("Isako æœ€å–œæ¬¢çš„äººçš„èº«é«˜ï¼š%d\n", *isako);
+	printf("å¼˜å­æœ€å–œæ¬¢çš„äººçš„èº«é«˜ï¼š%d\n", *hiroko);
 
 	return 0;
 }

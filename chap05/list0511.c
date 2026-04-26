@@ -1,20 +1,20 @@
 /*
-	Šw¶‚Ì“_”‚ğ“Ç‚İ‚ñ‚ÅÅ‚“_‚ÆÅ’á“_‚ğ•\¦
+	åŠ è½½å­¦ç”Ÿæˆç»©å¹¶æ˜¾ç¤ºæœ€é«˜åˆ†å’Œæœ€ä½åˆ†
 */
 
 #include <stdio.h>
 
-#define NUMBER	5		/* Šw¶‚Ìl” */
+#define NUMBER	5		/* å­¦ç”Ÿäººæ•° */
 
 int main(void)
 {
 	int i;
-	int tensu[NUMBER];	/* NUMBERl‚ÌŠw¶‚Ì“_” */
-	int max, min;		/* Å‚“_EÅ’á“_ */
+	int tensu[NUMBER];	/* NUMBERä¸ªå­¦ç”Ÿæˆç»© */
+	int max, min;		/* æœ€é«˜/æœ€ä½ç‚¹ */
 
-	printf("%dl‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n", NUMBER);
+	printf("ç®€ä»‹ %d äººåˆ†æ•°ã€‚\n", NUMBER);
 	for (i = 0; i < NUMBER; i++) {
-		printf("%2d”ÔF", i + 1);
+		printf("%2då·ï¼š", i + 1);
 		scanf("%d", &tensu[i]);
 	}
 
@@ -24,8 +24,8 @@ int main(void)
 		if (tensu[i] < min) min = tensu[i];
 	}
 
-	printf("Å‚“_F%d\n", max);
-	printf("Å’á“_F%d\n", min);
+	printf("æœ€é«˜ç‚¹ï¼š%d\n", max);
+	printf("æœ€ä½ç‚¹ï¼š%d\n", min);
 
 	return 0;
 }

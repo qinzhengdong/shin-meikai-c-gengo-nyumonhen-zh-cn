@@ -1,5 +1,5 @@
 /*
-	”z—ñ‚Ì—v‘f‚Ì’l‚ÆƒAƒhƒŒƒX‚ğ•\¦
+	æ˜¾ç¤ºæ•°ç»„å…ƒç´ çš„å€¼å’Œåœ°å€
 */
 
 #include <stdio.h>
@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 	int a[5] = {1, 2, 3, 4, 5};
-	int *p = a;				/* p‚Ía[0]‚ğw‚· */
+	int *p = a;				/* p æŒ‡å‘ a[0] */
 
 	for (i = 0; i < 5; i++)
 		printf("a[%d] = %d  *(a+%d) = %d  p[%d] = %d  *(p+%d) = %d\n",

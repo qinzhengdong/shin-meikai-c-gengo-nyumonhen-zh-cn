@@ -1,10 +1,10 @@
 /*
-	“ñ‚Â‚Ì®”’l‚ğŒğŠ·‚·‚é
+	äº¤æ¢ä¸¤ä¸ªæ•´æ•°å€¼
 */
 
 #include <stdio.h>
 
-/*--- px‚Æpy‚ªw‚·ƒIƒuƒWƒFƒNƒg‚Ì’l‚ğŒğŠ· ---*/
+/*---äº¤æ¢pxå’ŒpyæŒ‡å‘çš„å¯¹è±¡çš„å€¼---*/
 void swap(int *px, int *py)
 {
 	int temp = *px;
@@ -16,15 +16,15 @@ int main(void)
 {
 	int na, nb;
 
-	puts("“ñ‚Â‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-	printf("®”‚`F");   scanf("%d", &na);
-	printf("®”‚aF");   scanf("%d", &nb);
+	puts("è¾“å…¥ä¸¤ä¸ªæ•´æ•°ã€‚");
+	printf("æ•´æ•°ï¼¡ï¼š");   scanf("%d", &na);
+	printf("æ•´æ•°ï¼¢ï¼š");   scanf("%d", &nb);
 
 	swap(&na, &nb);
 
-	puts("‚±‚ê‚ç‚Ì’l‚ğŒğŠ·‚µ‚Ü‚µ‚½B");
-	printf("®”‚`‚Í%d‚Å‚·B\n", na);
-	printf("®”‚a‚Í%d‚Å‚·B\n", nb);
+	puts("æˆ‘å·²ç»æ¢äº†ä¸€æ®µæ—¶é—´äº†ã€‚");
+	printf("æ•´æ•° A æ˜¯ %dã€‚\n", na);
+	printf("æ•´æ•° B æ˜¯ %dã€‚\n", nb);
 
 	return 0;
 }

@@ -1,5 +1,5 @@
 /*
-	atoiŠÖ”‚Ì—˜—p—á
+	atoiå‡½æ•°ä½¿ç”¨ç¤ºä¾‹
 */
 
 #include <stdio.h>
@@ -9,10 +9,10 @@ int main(void)
 {
 	char str[128];
 
-	printf("•¶š—ñ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+	printf("è¯·è¾“å…¥å­—ç¬¦ä¸²ï¼š");
 	scanf("%s", str);
 
-	printf("®”‚É•ÏŠ·‚·‚é‚Æ%d‚Å‚·B\n", atoi(str));
+	printf("å°†æ•´æ•°è½¬æ¢å› %dã€‚\n", atoi(str));
 
 	return 0;
 }

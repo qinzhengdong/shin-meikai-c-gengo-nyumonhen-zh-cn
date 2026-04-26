@@ -1,15 +1,15 @@
 /*
-	•¶šŒ^‚Æ®”Œ^‚Ì‘å‚«‚³‚ğ•\¦‚·‚é
+	æ˜¾ç¤ºå­—ç¬¦å’Œæ•´æ•°ç±»å‹çš„å¤§å°
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	printf("sizeof(char)   %u\n", (unsigned)sizeof(char));
-	printf("sizeof(short)  %u\n", (unsigned)sizeof(short));
-	printf("sizeof(int)    %u\n", (unsigned)sizeof(int));
-	printf("sizeof(long)   %u\n", (unsigned)sizeof(long));
+	printf("sizeof(char)  ï¼ %u\n", (unsigned)sizeof(char));
+	printf("sizeof(short) ï¼ %u\n", (unsigned)sizeof(short));
+	printf("sizeof(int)   ï¼ %u\n", (unsigned)sizeof(int));
+	printf("sizeof(long)  ï¼ %u\n", (unsigned)sizeof(long));
 
 	return 0;
 }

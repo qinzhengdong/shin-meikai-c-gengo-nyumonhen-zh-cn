@@ -1,26 +1,26 @@
 /*
-	�ǂݍ��񂾌��̋G�߂�\��
+	显示加载月份的季节
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	int month;					/* �� */
+	int month;					/* 月 */
 
-	printf("�����ł����F");
+	printf("现在是几月？");
 	scanf("%d", &month);
 
 	if (month >= 3 && month <= 5)
-		printf("%d���͏t�ł��B\n", month);
+		printf("%d Tsukiryo 是顺天的天道。\n", month);
 	else if (month >= 6 && month <= 8)
-		printf("%d���͉Ăł��B\n", month);
+		printf("%d 月亮是夏天。\n", month);
 	else if (month >= 9 && month <= 11)
-		printf("%d���͏H�ł��B\n", month);
+		printf("%d Tsukiryo 是酒吞。\n", month);
 	else if (month == 1 || month == 2 || month == 12)
-		printf("%d���͓~�ł��B\n", month);
+		printf("%d 月亮是冬天。\n", month);
 	else
-		printf("%d���͂���܂����!!\a\n", month);
+		printf("%d没有月亮！！\a\n", month);
 
 	return 0;
 }

@@ -1,5 +1,5 @@
 /*
-	‘æ3Í‚Ì‚Ü‚Æ‚ßi‚»‚Ì‚Qj’l‚É‰ž‚¶‚ÄF‚ð•\Ž¦
+	ç¬¬ 3 ç« æ‘˜è¦ï¼ˆç¬¬ 2 éƒ¨åˆ†ï¼‰æ ¹æ®å€¼æ˜¾ç¤ºé¢œè‰²
 */
 
 #include <stdio.h>
@@ -8,16 +8,16 @@ int main(void)
 {
 	int sw;
 
-	printf("®”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+	printf("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
 	scanf("%d", &sw);
 
 	if (sw >= 1 && sw <= 3) {
 		switch (sw) {
-		 case 1: printf("Ô");  break;
-		 case 2: printf("Â");  break;
-		 case 3: printf("”’");  break;
+		 case 1: printf("èµ¤");  break;
+		 case 2: printf("é’");  break;
+		 case 3: printf("ç™½");  break;
 		}
-		printf("‚Å‚·B\n");
+		printf("æ­£ç¡®çš„ã€‚\n");
 	}
 
 	return 0;

@@ -1,10 +1,10 @@
 /*
-	ƒ|ƒCƒ“ƒ^‚É‚æ‚Á‚Äg’·‚ðŠÔÚ“I‚É‘€ì‚·‚é
+	é€šè¿‡æŒ‡é’ˆé—´æŽ¥æ“çºµé«˜åº¦
 */
 
 #include <stdio.h>
 
-/*--- ‚Ð‚ëŽq‚³‚ñi180cm–¢–ž‚Ìg’·‚ð180cm‚ÉL‚Î‚·j---*/
+/*--- Hirokoï¼ˆèº«é«˜ä»Žä¸è¶³180åŽ˜ç±³å¢žåŠ åˆ°180åŽ˜ç±³ï¼‰---*/
 void hiroko(int *height)
 {
 	if (*height < 180)
@@ -13,15 +13,15 @@ void hiroko(int *height)
 
 int main(void)
 {
-	int sato   = 178;		/* ²“¡GŽjŒN‚Ìg’· */
-	int sanaka = 175;		/* ²’†rÆŒN‚Ìg’· */
-	int masaki = 179;		/* ^èGFŒN‚Ìg’· */
+	int sato   = 178;		/* ä½è—¤å®çš„èº«é«˜ */
+	int sanaka = 175;		/* çœŸä¸­æ•ä¹Ÿèº«é«˜ */
+	int masaki = 179;		/* æ­£æœ¨å¼˜é«˜èº«é«˜ */
 
 	hiroko(&masaki);
 
-	printf("²“¡ŒN‚Ìg’·F%d\n", sato);
-	printf("²’†ŒN‚Ìg’·F%d\n", sanaka);
-	printf("^èŒN‚Ìg’·F%d\n", masaki);
+	printf("ä½è—¤çš„èº«é«˜ï¼š%d\n", sato);
+	printf("è¨é‚£å¡çš„èº«é«˜ï¼š%d\n", sanaka);
+	printf("æ­£æ ‘çš„èº«é«˜ï¼š%d\n", masaki);
 
 	return 0;
 }

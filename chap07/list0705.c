@@ -1,5 +1,5 @@
 /*
-	”z—ñ‚Ì—v‘f”‚ğ‹‚ß‚é
+	æŸ¥æ‰¾æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡
 */
 
 #include <stdio.h>
@@ -9,8 +9,8 @@ int main(void)
 	int    vi[10];
 	double vd[25];
 
-	printf("”z—ñvi‚Ì—v‘f”%u\n", (unsigned)(sizeof(vi) / sizeof(vi[0])));
-	printf("”z—ñvd‚Ì—v‘f”%u\n", (unsigned)(sizeof(vd) / sizeof(vd[0])));
+	printf("æ•°ç»„ vi ä¸­çš„å…ƒç´ æ•°é‡ = %u\n", (unsigned)(sizeof(vi) / sizeof(vi[0])));
+	printf("æ•°ç»„ vd çš„å…ƒç´ æ•°é‡ = %u\n", (unsigned)(sizeof(vd) / sizeof(vd[0])));
 
 	return 0;
 }

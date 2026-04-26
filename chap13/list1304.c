@@ -1,51 +1,51 @@
 /*
-	‘O‰ñ‚ÌƒvƒƒOƒ‰ƒ€Às‚Ì“ú•t‚Æ‚ğ•\¦‚·‚é
+	æ˜¾ç¤ºä¸Šæ¬¡ç¨‹åºè¿è¡Œçš„æ—¥æœŸå’Œæ—¶é—´
 */
 
 #include <time.h>
 #include <stdio.h>
 
-char data_file[] = "datetime.dat";				/* ƒtƒ@ƒCƒ‹–¼ */
+char data_file[] = "datetime.dat";				/* æ–‡ä»¶å */
 
-/*--- ‘O‰ñ‚Ì“ú•tE‚ğæ“¾E•\¦ ---*/
+/*--- è·å–å¹¶æ˜¾ç¤ºä¹‹å‰çš„æ—¥æœŸå’Œæ—¶é—´ ---*/
 void get_data(void)
 {
 	FILE *fp;
 
-	if ((fp = fopen(data_file, "r")) == NULL)				/* ƒI[ƒvƒ“ */
-		printf("–{ƒvƒƒOƒ‰ƒ€‚ğÀs‚·‚é‚Ì‚Í‰‚ß‚Ä‚Å‚·‚ËB\n");
+	if ((fp = fopen(data_file, "r")) == NULL)				/* æ‰“å¼€ */
+		printf("è¿™æ˜¯æˆ‘çš„ç¬¬ä¸€æ­¥ã€‚\n");
 	else {
 		int year, month, day, h, m, s;
 
 		fscanf(fp, "%d%d%d%d%d%d", &year, &month, &day, &h, &m, &s);
-		printf("‘O‰ñ‚Í%d”N%dŒ%d“ú%d%d•ª%d•b‚Å‚µ‚½B\n",
+		printf("ä¸Šæ—¶%då¹´%dæœˆ%då¤©%dçŸ­æ—¶%dåˆ†%dç§’ã€‚\n",
 										year, month, day, h, m, s);
-		fclose(fp);											/* ƒNƒ[ƒY */
+		fclose(fp);											/* å…³é—­ */
 	}
 }
 
-/*--- ¡‰ñ‚Ì“ú•tE‚ğ‘‚«‚Ş ---*/
+/*--- å†™å…¥å½“å‰æ—¥æœŸå’Œæ—¶é—´ ---*/
 void put_data(void)
 {
 	FILE *fp;
-	time_t current = time(NULL);				/* Œ»İ‚Ì—ï */
-	struct tm *timer = localtime(&current);		/* —v‘f•Ê‚Ìi’n•ûj*/
+	time_t current = time(NULL);				/* å½“å‰æ—¥å†æ—¶é—´ */
+	struct tm *timer = localtime(&current);		/* å„å…ƒç´ çš„æ—¶é—´ï¼ˆå½“åœ°æ—¶é—´ï¼‰*/
 
-	if ((fp = fopen(data_file, "w")) == NULL)				/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	if ((fp = fopen(data_file, "w")) == NULL)				/* æ‰“å¼€ */
+		printf("éæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
 		fprintf(fp, "%d %d %d %d %d %d\n",
 				timer->tm_year + 1900, timer->tm_mon + 1, timer->tm_mday,
 				timer->tm_hour,		   timer->tm_min,	  timer->tm_sec);
-		fclose(fp);											/* ƒNƒ[ƒY */
+		fclose(fp);											/* å…³é—­ */
 	}
 }
 
 int main(void)
 {
-	get_data();			/* ‘O‰ñ‚Ì“ú•tE‚ğæ“¾E•\¦ */
+	get_data();			/* è·å–å¹¶æ˜¾ç¤ºä¹‹å‰çš„æ—¥æœŸå’Œæ—¶é—´ */
 
-	put_data();			/* ¡‰ñ‚Ì“ú•tE‚ğ‘‚«‚Ş */
+	put_data();			/* å†™å…¥å½“å‰æ—¥æœŸå’Œæ—¶é—´ */
 
 	return 0;
 }

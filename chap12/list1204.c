@@ -1,20 +1,20 @@
 /*
-	’´”\—Í‚ğ‚à‚Á‚½‚Ğ‚ëq‚³‚ñ
+	æ‹¥æœ‰è¶…èƒ½åŠ›çš„å¼˜å­
 */
 
 #include <stdio.h>
 
-#define NAME_LEN	64		/* –¼‘O‚Ì•¶š” */
+#define NAME_LEN	64		/* åç§°ä¸­çš„å­—ç¬¦æ•° */
 
-/*=== Šw¶‚ğ•\‚·\‘¢‘Ì ===*/
+/*===ä»£è¡¨å­¦ç”Ÿçš„ç»“æ„===*/
 struct student {
-	char  name[NAME_LEN];	/* –¼‘O */
-	int   height;			/* g’· */
-	float weight;			/* ‘Ìd */
-	long  schols;			/* §Šw‹à */
+	char  name[NAME_LEN];	/* åå‰ */
+	int   height;			/* èº«é•· */
+	float weight;			/* ä½“é‡ */
+	long  schols;			/* å¥¨å­¦é‡‘ */
 };
 
-/*--- std‚ªw‚·Šw¶‚Ìg’·‚ğ180cm‚Ü‚ÅL‚Î‚µ‚Ä‘Ìd‚ğ80kg‚Ü‚ÅŒ¸‚ç‚· ---*/
+/*---å°†stdæŒ‡ç¤ºçš„å­¦ç”Ÿèº«é«˜å¢åŠ è‡³180cmï¼Œä½“é‡å‡å°‘è‡³80kg ---*/
 void hiroko(struct student *std)
 {
 	if ((*std).height < 180) (*std).height = 180;
@@ -27,10 +27,10 @@ int main(void)
 
 	hiroko(&sanaka);
 
-	printf("@–¼  %s\n",   sanaka.name);
-	printf("g@’·  %d\n",   sanaka.height);
-	printf("‘Ì@d  %.1f\n", sanaka.weight);
-	printf("§Šw‹à  %ld\n",  sanaka.schols);
+	printf("æ°ã€€å ï¼ %s\n",   sanaka.name);
+	printf("èº«ã€€é•· ï¼ %d\n",   sanaka.height);
+	printf("ä½“ã€€é‡ ï¼ %.1f\n", sanaka.weight);
+	printf("å¥¨å­¦é‡‘ ï¼ %ld\n",  sanaka.schols);
 
 	return 0;
 }

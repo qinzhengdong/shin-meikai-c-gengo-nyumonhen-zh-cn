@@ -1,17 +1,17 @@
 /*
-	\‘¢‘Ì‚ğ•Ô‚·ŠÖ”
+	è¿”å›ç»“æ„çš„å‡½æ•°
 */
 
 #include <stdio.h>
 
-/*=== xyz\‘¢‘Ì ===*/
+/*=== xyzç»“æ„===*/
 struct xyz {
 	int    x;
 	long   y;
 	double z;
 };
 
-/*--- {x,y,z}‚Ì’l‚ğ‚à‚Âxyz\‘¢‘Ì‚ğ•Ô‚· ---*/
+/*--- è¿”å›å€¼ä¸º {x,y,z} çš„ xyz ç»“æ„ ---*/
 struct xyz xyz_of(int x, long y, double z)
 {
 	struct xyz temp;

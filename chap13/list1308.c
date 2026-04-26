@@ -1,5 +1,5 @@
 /*
-	‰~ü—¦‚Ì’l‚ğƒeƒLƒXƒgƒtƒ@ƒCƒ‹‚É‘‚«‚ñ‚Å“Ç‚İæ‚é
+	å°† pi å€¼å†™å…¥å’Œè¯»å–åˆ°æ–‡æœ¬æ–‡ä»¶
 */
 
 #include <stdio.h>
@@ -9,23 +9,23 @@ int main(void)
 	FILE *fp;
 	double pi = 3.14159265358979323846;
 
-	printf("•Ï” pi ‚©‚çæ‚èo‚µ‚½‰~ü—¦‚Í%23.21f‚Å‚·B\n", pi);
+	printf("pi ä¸­é—´çš„å˜åŒ–é‡æ˜¯ %23.21fã€‚\n", pi);
 
-	/* ‘‚İ */
-	if ((fp = fopen("PI.txt", "w")) == NULL)			/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	/* å†™ä½œ */
+	if ((fp = fopen("PI.txt", "w")) == NULL)			/* æ‰“å¼€ */
+		printf("éæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
-		fprintf(fp, "%f", pi);							/* pi‚ğ‘‚«‚Ş */
-		fclose(fp);										/* ƒNƒ[ƒY */
+		fprintf(fp, "%f", pi);							/* å†™åœ†å‘¨ç‡ */
+		fclose(fp);										/* å…³é—­ */
 	}
 
-	/* “Çæ‚è */
-	if ((fp = fopen("PI.txt", "r")) == NULL)			/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	/* é˜…è¯» */
+	if ((fp = fopen("PI.txt", "r")) == NULL)			/* æ‰“å¼€ */
+		printf("éæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
-		fscanf(fp, "%lf", &pi);							/* pi‚É“Ç‚İæ‚é */
-		printf("ƒtƒ@ƒCƒ‹‚©‚ç“Ç‚İæ‚Á‚½‰~ü—¦‚Í%23.21f‚Å‚·B\n", pi);
-		fclose(fp);										/* ƒNƒ[ƒY */
+		fscanf(fp, "%lf", &pi);							/* è¯»åˆ° pi */
+		printf("åœ¨æœ¬æ–‡ä¸­ï¼ŒPi æ˜¯ %23.21fã€‚\n", pi);
+		fclose(fp);										/* å…³é—­ */
 	}
 
 	return 0;

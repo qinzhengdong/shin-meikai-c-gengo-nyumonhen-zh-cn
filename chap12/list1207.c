@@ -1,22 +1,22 @@
 /*
-	‚Tl‚ÌŠw¶‚ğg’·‚Ì¸‡‚Éƒ\[ƒg
+	æŒ‰èº«é«˜å‡åºå¯¹ 5 åå­¦ç”Ÿè¿›è¡Œæ’åº
 */
 
 #include <stdio.h>
 #include <string.h>
 
-#define NUMBER		5		/* Šw¶‚Ìl” */
-#define NAME_LEN	64		/* –¼‘O‚Ì•¶š” */
+#define NUMBER		5		/* å­¦ç”Ÿäººæ•° */
+#define NAME_LEN	64		/* åç§°ä¸­çš„å­—ç¬¦æ•° */
 
-/*=== Šw¶‚ğ•\‚·\‘¢‘Ì ===*/
+/*===ä»£è¡¨å­¦ç”Ÿçš„ç»“æ„===*/
 typedef struct {
-	char  name[NAME_LEN];	/* –¼‘O */
-	int   height;			/* g’· */
-	float weight;			/* ‘Ìd */
-	long  schols;			/* §Šw‹à */
+	char  name[NAME_LEN];	/* åå‰ */
+	int   height;			/* èº«é•· */
+	float weight;			/* ä½“é‡ */
+	long  schols;			/* å¥¨å­¦é‡‘ */
 } Student;
 
-/*--- x‚¨‚æ‚Ñy‚ªw‚·Šw¶‚ğŒğŠ· ---*/
+/*--- äº¤æ¢ x å’Œ y æŒ‡å‘çš„å­¦ç”Ÿ ---*/
 void swap_Student(Student *x, Student *y)
 {
 	Student temp = *x;
@@ -24,7 +24,7 @@ void swap_Student(Student *x, Student *y)
 	*y = temp;
 }
 
-/*--- Šw¶‚Ì”z—ña‚Ìæ“ªnŒÂ‚Ì—v‘f‚ğg’·‚Ì¸‡‚Éƒ\[ƒg ---*/
+/*--- æŒ‰é«˜åº¦å‡åºå¯¹å­¦ç”Ÿæ•°ç»„ a çš„å‰ n ä¸ªå…ƒç´ è¿›è¡Œæ’åº ---*/
 void sort_by_height(Student a[], int n)
 {
 	int i, j;
@@ -40,20 +40,20 @@ int main(void)
 {
 	int i;
 	Student std[] = {
-		{ "Sato",   178, 61.2, 80000},	/* ²“¡GjŒN */
-		{ "Sanaka", 175, 62.5, 73000},	/* ²’†rÆŒN */
-		{ "Takao",  173, 86.2, 0},		/* ‚”öŒ’iŒN */
-		{ "Mike",   165, 72.3, 70000},	/* •½–ØMikeŒN */
-		{ "Masaki", 179, 77.5, 70000},	/* ^èGFŒN */
+		{ "Sato",   178, 61.2, 80000},	/* ä½è—¤å®å²å› */
+		{ "Sanaka", 175, 62.5, 73000},	/* ä½ä¸­ä¿Šå“‰å› */
+		{ "Takao",  173, 86.2, 0},		/* é«˜å°¾å¥å¸å› */
+		{ "Mike",   165, 72.3, 70000},	/* å¹³æœ¨Mikeå› */
+		{ "Masaki", 179, 77.5, 70000},	/* çœŸå´å®å­å› */
 	};
 
 	for (i = 0; i < NUMBER; i++)
 		printf("%-8s %6d%6.1f%7ld\n",
 			std[i].name, std[i].height, std[i].weight, std[i].schols);
 
-	sort_by_height(std, NUMBER);	/* g’·‚Ì¸‡‚Éƒ\[ƒg */
+	sort_by_height(std, NUMBER);	/* æŒ‰èº«é«˜å‡åºæ’åˆ— */
 
-	puts("\ng’·‡‚Éƒ\[ƒg‚µ‚Ü‚µ‚½B");
+	puts("\n èŒä½é«˜ã€‚");
 	for (i = 0; i < NUMBER; i++)
 		printf("%-8s %6d%6.1f%7ld\n",
 			std[i].name, std[i].height, std[i].weight, std[i].schols);

@@ -1,5 +1,5 @@
 /*
-	‘æ‚WÍ‚Ì‚Ü‚Æ‚ßi—ñ‹“j
+	ç¬¬8ç« æ€»ç»“ï¼ˆæšä¸¾ï¼‰
 */
 
 #include <stdio.h>
@@ -10,15 +10,15 @@ int main(void)
 {
 	int color;
 
-	printf("0`2‚Ì’lF");  scanf("%d", &color);
+	printf("0 åˆ° 2 ä¹‹é—´çš„å€¼ï¼š");  scanf("%d", &color);
 
-	printf("‚ ‚È‚½‚Í");  
+	printf("ä½ ");  
 	switch (color) {
-	 case 0 : printf("Ô");  break;
-	 case 1 : printf("—Î");  break;
-	 case 2 : printf("Â");  break;
+	 case 0 : printf("èµ¤");  break;
+	 case 1 : printf("ç·‘");  break;
+	 case 2 : printf("é’");  break;
 	}
-	printf("‚ğ‘I‚Ñ‚Ü‚µ‚½B\n");
+	printf("æˆ‘é€‰æ‹©äº†å®ƒã€‚\n");
 
 	return 0;
 }

@@ -1,5 +1,5 @@
 /*
-	“Ç‚Ýž‚ñ‚¾³‚Ì®”’l‚Ü‚ÅƒJƒEƒ“ƒgƒAƒbƒvifor•¶j
+	è®¡æ•°åˆ°è¯»å–çš„æ­£æ•´æ•°å€¼ï¼ˆforè¯­å¥ï¼‰
 */
 
 #include <stdio.h>
@@ -8,12 +8,12 @@ int main(void)
 {
 	int i, no;
 
-	printf("³‚Ì®”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+	printf("è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°ï¼š");
 	scanf("%d", &no);
 
 	for (i = 0; i <= no; i++)
 		printf("%d ", i);
-	putchar('\n');		/* ‰üs */
+	putchar('\n');		/* æ”¹è¡Œ */
 
 	return 0;
 }

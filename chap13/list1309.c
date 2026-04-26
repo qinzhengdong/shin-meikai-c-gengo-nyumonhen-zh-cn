@@ -1,5 +1,5 @@
 /*
-	‰~ü—¦‚Ì’l‚ğƒoƒCƒiƒŠƒtƒ@ƒCƒ‹‚É‘‚«‚ñ‚Å“Ç‚İæ‚é
+	å°† pi å€¼å†™å…¥å’Œè¯»å–äºŒè¿›åˆ¶æ–‡ä»¶
 */
 
 #include <stdio.h>
@@ -9,23 +9,23 @@ int main(void)
 	FILE *fp;
 	double pi = 3.14159265358979323846;
 
-	printf("•Ï” pi ‚©‚çæ‚èo‚µ‚½‰~ü—¦‚Í%23.21f‚Å‚·B\n", pi);
+	printf("pi ä¸­é—´çš„å˜åŒ–é‡æ˜¯ %23.21fã€‚\n", pi);
 
-	/* ‘‚İ */
-	if ((fp = fopen("PI.bin", "wb")) == NULL)		/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	/* å†™ä½œ */
+	if ((fp = fopen("PI.bin", "wb")) == NULL)		/* æ‰“å¼€ */
+		printf("éæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
-		fwrite(&pi, sizeof(double), 1, fp);			/* pi‚ğ‘‚«‚Ş */
+		fwrite(&pi, sizeof(double), 1, fp);			/* å†™åœ†å‘¨ç‡ */
 		fclose(fp);
-	}												/* ƒNƒ[ƒY */
+	}												/* å…³é—­ */
 
-	/* “Çæ‚è */
-	if ((fp = fopen("PI.bin", "rb")) == NULL)		/* ƒI[ƒvƒ“ */
-		printf("\aƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	/* é˜…è¯» */
+	if ((fp = fopen("PI.bin", "rb")) == NULL)		/* æ‰“å¼€ */
+		printf("éæ³•æ‰“å¼€ \a æ–‡æœ¬é¡¹ã€‚\n");
 	else {
-		fread(&pi, sizeof(double), 1, fp);			/* pi‚É“Ç‚İæ‚é */
-		printf("ƒtƒ@ƒCƒ‹‚©‚ç“Ç‚İæ‚Á‚½‰~ü—¦‚Í%23.21f‚Å‚·B\n", pi);
-		fclose(fp);									/* ƒNƒ[ƒY */
+		fread(&pi, sizeof(double), 1, fp);			/* è¯»åˆ° pi */
+		printf("åœ¨æœ¬æ–‡ä¸­ï¼ŒPi æ˜¯ %23.21fã€‚\n", pi);
+		fclose(fp);									/* å…³é—­ */
 	}
 
 	return 0;

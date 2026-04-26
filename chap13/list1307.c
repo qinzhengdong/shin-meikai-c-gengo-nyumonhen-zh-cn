@@ -1,5 +1,5 @@
 /*
-	ƒtƒ@ƒCƒ‹‚ğƒRƒs[‚·‚é
+	å¤åˆ¶æ–‡ä»¶
 */
 
 #include <stdio.h>
@@ -7,25 +7,25 @@
 int main(void)
 {
 	int ch;
-	FILE *sfp;						/* ƒRƒs[Œ³ƒtƒ@ƒCƒ‹ */
-	FILE *dfp;						/* ƒRƒs[æƒtƒ@ƒCƒ‹ */
-	char sname[FILENAME_MAX];		/* ƒRƒs[Œ³‚Ìƒtƒ@ƒCƒ‹–¼ */
-	char dname[FILENAME_MAX];		/* ƒRƒs[æ‚Ìƒtƒ@ƒCƒ‹–¼ */
+	FILE *sfp;						/* å¤åˆ¶æºæ–‡ä»¶ */
+	FILE *dfp;						/* å¤åˆ¶ç›®æ ‡æ–‡ä»¶ */
+	char sname[FILENAME_MAX];		/* å¤åˆ¶æºæ–‡ä»¶å */
+	char dname[FILENAME_MAX];		/* ç›®æ ‡æ–‡ä»¶å */
 
-	printf("ƒRƒs[Œ³ƒtƒ@ƒCƒ‹–¼F");   scanf("%s", sname);
-	printf("ƒRƒs[æƒtƒ@ƒCƒ‹–¼F");   scanf("%s", dname);
+	printf("å¤åˆ¶æºæ–‡ä»¶åï¼š");   scanf("%s", sname);
+	printf("å¤åˆ¶ç›®æ ‡æ–‡ä»¶åï¼š");   scanf("%s", dname);
 
-	if ((sfp = fopen(sname, "r")) == NULL)			/* ƒRƒs[Œ³‚ğƒI[ƒvƒ“ */
-		printf("\aƒRƒs[Œ³ƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+	if ((sfp = fopen(sname, "r")) == NULL)			/* æ‰“å¼€å¤åˆ¶æº */
+		printf("\a éæ³•çˆ†ç‚¸æºæ–‡æœ¬é¡¹ã€‚\n");
 	else {
-		if ((dfp = fopen(dname, "w")) == NULL)		/* ƒRƒs[æ‚ğƒI[ƒvƒ“ */
-			printf("\aƒRƒs[æƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB\n");
+		if ((dfp = fopen(dname, "w")) == NULL)		/* æ‰“å¼€å¤åˆ¶ç›®çš„åœ° */
+			printf("\a æœªç»æˆæƒè¿›å…¥ã€‚\n");
 		else {
 			while ((ch = fgetc(sfp)) != EOF)
 				fputc(ch, dfp);
-			fclose(dfp);						/* ƒRƒs[æ‚ğƒNƒ[ƒY */
+			fclose(dfp);						/* å…³é—­å¤åˆ¶ç›®çš„åœ° */
 		}
-		fclose(sfp);							/* ƒRƒs[Œ³‚ğƒNƒ[ƒY */
+		fclose(sfp);							/* å…³é—­å¤åˆ¶æº */
 	}
 
 	return 0;

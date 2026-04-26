@@ -1,10 +1,10 @@
 /*
-	”z—ñ‚Ì‘S—v‘f‚ğƒ[ƒ‚É‚·‚é
+	å°†æ•°ç»„çš„æ‰€æœ‰å…ƒç´ è®¾ç½®ä¸ºé›¶
 */
 
 #include <stdio.h>
 
-/*--- —v‘f”n‚Ì”z—ñv‚Ì—v‘f‚É0‚ğ‘ã“ü ---*/
+/*--- å°† 0 åˆ†é…ç»™ n ä¸ªå…ƒç´ çš„æ•°ç»„ v çš„å…ƒç´  ---*/
 void set_zero(int v[], int n)
 {
 	int i;
@@ -13,7 +13,7 @@ void set_zero(int v[], int n)
 		v[i] = 0;
 }
 
-/*--- —v‘f”n‚Ì”z—ñv‚Ì‘S—v‘f‚ğ•\¦‚µ‚Ä‰üs ---*/
+/*--- æ˜¾ç¤º n ä¸ªå…ƒç´ çš„æ•°ç»„ v çš„æ‰€æœ‰å…ƒç´ å¹¶æ¢è¡Œ ---*/
 void print_array(const int v[], int n)
 {
 	int i;
@@ -32,10 +32,10 @@ int main(void)
 	printf("ary1 = ");   print_array(ary1, 5);   putchar('\n');
 	printf("ary2 = ");   print_array(ary2, 3);   putchar('\n');
 
-	set_zero(ary1, 5);		/* ”z—ñary1‚Ì‘S—v‘f‚É0‚ğ‘ã“ü */
-	set_zero(ary2, 3);		/* ”z—ñary2‚Ì‘S—v‘f‚É0‚ğ‘ã“ü */
+	set_zero(ary1, 5);		/* å°† 0 èµ‹ç»™æ•°ç»„ ary1 çš„æ‰€æœ‰å…ƒç´  */
+	set_zero(ary2, 3);		/* å°† 0 èµ‹ç»™æ•°ç»„ ary2 çš„æ‰€æœ‰å…ƒç´  */
 
-	printf("—¼”z—ñ‚Ì‘S—v‘f‚É0‚ğ‘ã“ü‚µ‚Ü‚µ‚½B\n");
+	printf("æˆ‘ä¸€èˆ¬0åˆ†å¸ƒçš„å…ƒç´ å½’å¤šä¸ªç»„æ‰€æœ‰ã€‚\n");
 	printf("ary1 = ");   print_array(ary1, 5);   putchar('\n');
 	printf("ary2 = ");   print_array(ary2, 3);   putchar('\n');
 

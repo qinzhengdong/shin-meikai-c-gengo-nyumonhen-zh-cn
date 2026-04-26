@@ -1,18 +1,18 @@
 /*
-	’€Ÿ’Tõi”Ô•º–@Ffor•¶j
+	é€æ¬¡æ¢ç´¢ï¼ˆå·å…µæ³•ï¼šforæ–‡ï¼‰
 */
 
 #include <stdio.h>
 
-#define NUMBER		5		/* —v‘f” */
-#define FAILED		-1		/* ’Tõ¸”s */
+#define NUMBER		5		/* è¦ç´ æ•° */
+#define FAILED		-1		/* æ¢ç´¢å¤±æ•— */
 
-/*--- —v‘f”n‚Ì”z—ñv‚©‚çkey‚Æˆê’v‚·‚é—v‘f‚ğ’Tõi”Ô•º–@j---*/
+/*--- ä»æ•°ç»„ v ä¸­æœç´¢ä¸å…ƒç´ åŒ¹é…çš„å…ƒç´ ï¼ˆä¿æŠ¤æ–¹æ³•ï¼‰---*/
 int search(int v[], int key, int n)
 {
 	int i;
 
-	v[n] = key;		/* ”Ô•º‚ğŠi”[ */
+	v[n] = key;		/* å­˜æ”¾å®ˆå« */
 
 	for (i = 0; v[i] != key; i++)
 		;
@@ -25,16 +25,16 @@ int main(void)
 	int vx[NUMBER + 1];
 
 	for (i = 0; i < NUMBER; i++) {
-		printf("vx[%d]F", i);
+		printf("vx[%d]ï¼š", i);
 		scanf("%d", &vx[i]);
 	}
-	printf("’T‚·’lF");
+	printf("å¯»æ‰¾çš„ä»·å€¼ï¼š");
 	scanf("%d", &ky);
 
 	if ((idx = search(vx, ky, NUMBER)) == FAILED)
-		puts("\a’Tõ‚É¸”s‚µ‚Ü‚µ‚½B");
+		puts("\a æœç´¢å¤±è´¥ã€‚");
 	else
-		printf("%d‚Í%d”Ô–Ú‚É‚ ‚è‚Ü‚·B\n", ky, idx + 1);
+		printf("%d è¿™æ˜¯ %d é—®é¢˜ã€‚\n", ky, idx + 1);
 
 	return 0;
 }

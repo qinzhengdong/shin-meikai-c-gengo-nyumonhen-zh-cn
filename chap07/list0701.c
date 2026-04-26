@@ -1,5 +1,5 @@
 /*
-	•¶šŒ^‚Æ®”Œ^‚Ì•\Œ»”ÍˆÍ‚ğ•\¦‚·‚é
+	æ˜¾ç¤ºå­—ç¬¦å’Œæ•´æ•°ç±»å‹çš„è¡¨è¾¾å¼èŒƒå›´
 */
 
 #include <stdio.h>
@@ -7,18 +7,18 @@
 
 int main(void)
 {
-	puts("–{ŠÂ‹«‚Å‚ÌŠe•¶šŒ^E®”Œ^‚Ì’l‚Ì”ÍˆÍ");
-	printf("char           : %d`%d\n",   CHAR_MIN , CHAR_MAX);
-	printf("signed char    : %d`%d\n",   SCHAR_MIN, SCHAR_MAX);
-	printf("unsignd char   : %d`%d\n",   0        , UCHAR_MAX);
+	puts("è¯¥ç¯å¢ƒä¸­æ¯ç§å­—ç¬¦ç±»å‹å’Œæ•´æ•°ç±»å‹çš„å–å€¼èŒƒå›´");
+	printf("char           : %dï½%d\n",   CHAR_MIN , CHAR_MAX);
+	printf("signed char    : %dï½%d\n",   SCHAR_MIN, SCHAR_MAX);
+	printf("unsignd char   : %dï½%d\n",   0        , UCHAR_MAX);
 
-	printf("short          : %d`%d\n",   SHRT_MIN , SHRT_MAX);
-	printf("int            : %d`%d\n",   INT_MIN  , INT_MAX);
-	printf("long           : %ld`%ld\n", LONG_MIN , LONG_MAX);
+	printf("short          : %dï½%d\n",   SHRT_MIN , SHRT_MAX);
+	printf("int            : %dï½%d\n",   INT_MIN  , INT_MAX);
+	printf("long           : %ldï½%ld\n", LONG_MIN , LONG_MAX);
 
-	printf("unsigned short : %u`%u\n",   0        , USHRT_MAX);
-	printf("unsigned       : %u`%u\n",   0        , UINT_MAX);
-	printf("unsigned long  : %lu`%lu\n", 0        , ULONG_MAX);
+	printf("unsigned short : %uï½%u\n",   0        , USHRT_MAX);
+	printf("unsigned       : %uï½%u\n",   0        , UINT_MAX);
+	printf("unsigned long  : %luï½%lu\n", 0        , ULONG_MAX);
 
 	return 0;
 }

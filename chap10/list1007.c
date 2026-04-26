@@ -1,10 +1,10 @@
 /*
-	“ñ‚Â‚Ì®”‚ğ¸‡‚É•À‚×‚é
+	å°†ä¸¤ä¸ªæ•´æ•°æŒ‰å‡åºæ’åˆ—
 */
 
 #include <stdio.h>
 
-/*--- px‚Æpy‚ªw‚·ƒIƒuƒWƒFƒNƒg‚Ì’l‚ğŒğŠ· ---*/
+/*---äº¤æ¢pxå’ŒpyæŒ‡å‘çš„å¯¹è±¡çš„å€¼---*/
 void swap(int *px, int *py)
 {
 	int temp = *px;
@@ -12,7 +12,7 @@ void swap(int *px, int *py)
 	*py = temp;
 }
 
-/*--- *n1…*n2‚Æ‚È‚é‚æ‚¤‚É•À‚×‚é ---*/
+/*---æ’åˆ—ä½¿å¾—*n1â‰¤*n2 ---*/
 void sort2(int *n1, int *n2)
 {
 	if (*n1 > *n2)
@@ -23,15 +23,15 @@ int main(void)
 {
 	int na, nb;
 
-	puts("“ñ‚Â‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-	printf("®”‚`F");   scanf("%d", &na);
-	printf("®”‚aF");   scanf("%d", &nb);
+	puts("è¾“å…¥ä¸¤ä¸ªæ•´æ•°ã€‚");
+	printf("æ•´æ•°ï¼¡ï¼š");   scanf("%d", &na);
+	printf("æ•´æ•°ï¼¢ï¼š");   scanf("%d", &nb);
 
 	sort2(&na, &nb);
 
-	puts("¸‡‚Éƒ\[ƒg‚µ‚Ü‚µ‚½B");
-	printf("®”‚`‚Í%d‚Å‚·B\n", na);
-	printf("®”‚a‚Í%d‚Å‚·B\n", nb);
+	puts("æ’åºé¡ºåºã€‚");
+	printf("æ•´æ•° A æ˜¯ %dã€‚\n", na);
+	printf("æ•´æ•° B æ˜¯ %dã€‚\n", nb);
 
 	return 0;
 }

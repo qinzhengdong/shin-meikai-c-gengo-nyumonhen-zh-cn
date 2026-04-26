@@ -1,5 +1,5 @@
 /*
-	©“®Ô‚ÌˆÚ“®
+	æ±½è½¦è¿åŠ¨
 */
 
 #include <math.h>
@@ -7,40 +7,40 @@
 
 #define sqr(n)  ((n) * (n))
 
-/*=== “_‚ÌÀ•W‚ğ•\‚·\‘¢‘Ì ===*/
+/*===æ˜¾ç¤ºç‚¹æ±‡æ€»===*/
 typedef struct  {
-	double x;	/* ‚wÀ•W */
-	double y;	/* ‚xÀ•W */
+	double x;	/* ï¼¸åº§æ¨™ */
+	double y;	/* ï¼¹åº§æ¨™ */
 } Point;
 
-/*=== ©“®Ô‚ğ•\‚·\‘¢‘Ì ===*/
+/*===ä»£è¡¨æ±½è½¦çš„ç»“æ„===*/
 typedef struct  {
-	Point  pt;		/* Œ»İˆÊ’u */
-	double fuel;	/* c‚è”R—¿ */
+	Point  pt;		/* ç¾åœ¨ä½ç½® */
+	double fuel;	/* å‰©ä½™ç‡ƒæ–™ */
 } Car;
 
-/*--- “_pa‚Æ“_pb‚Ì‹——£‚ğ•Ô‚·---*/
+/*--- è¿”å›ç‚¹ pa å’Œç‚¹ pb ä¹‹é—´çš„è·ç¦»---*/
 double distance_of(Point pa, Point pb)
 {
 	return sqrt(sqr(pa.x - pb.x) + sqr(pa.y - pb.y));
 }
 
-/*--- ©“®Ô‚ÌŒ»İˆÊ’u‚Æc‚è”R—¿‚ğ•\¦ ---*/
+/*--- æ˜¾ç¤ºæ±½è½¦å½“å‰ä½ç½®å’Œå‰©ä½™æ²¹é‡ ---*/
 void put_info(Car c)
 {
-	printf("Œ»İˆÊ’uF(%.2f, %.2f)\n", c.pt.x, c.pt.y);
-	printf("c‚è”R—¿F%.2fƒŠƒbƒgƒ‹\n", c.fuel);
+	printf("ç¾åœ¨ä½ç½®ï¼š(%.2f, %.2f)\n", c.pt.x, c.pt.y);
+	printf("å‰©ä½™ç‡ƒæ²¹ï¼š%.2f å‡ \n", c.fuel);
 }
 
-/*--- c‚Ìw‚·Ô‚ğ–Ú“IÀ•Wdest‚ÉˆÚ“® ---*/
+/*---å°†cæŒ‡å‘çš„å°è½¦ç§»åŠ¨åˆ°ç›®çš„åœ°åæ ‡dest ---*/
 int move(Car *c, Point dest)
 {
-	double d = distance_of(c->pt, dest);	/* ˆÚ“®‹——£ */
-	if (d > c->fuel)						/* ˆÚ“®‹——£‚ª”R—¿‚ğ’´‰ß */
-		return 0;							/* ˆÚ“®•s‰Â */
-	c->pt = dest;		/* Œ»İˆÊ’u‚ğXVidest‚ÉˆÚ“®j */
-	c->fuel -= d;		/* ”R—¿‚ğXViˆÚ“®‹——£d‚Ì•ª‚¾‚¯Œ¸‚éj */
-	return 1;								/* ˆÚ“®¬Œ÷ */
+	double d = distance_of(c->pt, dest);	/* ç§»å‹•è·é›¢ */
+	if (d > c->fuel)						/* è¡Œé©¶è·ç¦»è¶…è¿‡ç‡ƒæ–™ */
+		return 0;							/* ç§»å‹•ä¸å¯ */
+	c->pt = dest;		/* æ›´æ–°å½“å‰ä½ç½®ï¼ˆç§»åŠ¨åˆ°ç›®çš„åœ°ï¼‰ */
+	c->fuel -= d;		/* æ›´æ–°ç‡ƒæ²¹ï¼ˆå‡å°‘è¡Œé©¶è·ç¦» dï¼‰ */
+	return 1;								/* ç§»å‹•æˆåŠŸ */
 }
 
 int main(void)
@@ -49,19 +49,19 @@ int main(void)
 
 	while (1) {
 		int select;
-		Point dest;			/* –Ú“I’n‚ÌÀ•W */
+		Point dest;			/* ç›®çš„åœ°åæ ‡ */
 
-		put_info(mycar);	/* Œ»İˆÊ’u‚Æc‚è”R—¿‚ğ•\¦ */
+		put_info(mycar);	/* æ˜¾ç¤ºå½“å‰ä½ç½®å’Œå‰©ä½™ç‡ƒæ–™ */
 
-		printf("ˆÚ“®‚µ‚Ü‚·‚©yYesc1^Noc0zF");
+		printf("ä½ æƒ³æ¬å®¶å—ï¼Ÿ [æ˜¯â€¦1/å¦â€¦0]ï¼š");
 		scanf("%d", &select);
 		if (select != 1) break;
 
-		printf("–Ú“I’l‚Ì‚wÀ•WF");  scanf("%lf", &dest.x);
-		printf("@@@@‚xÀ•WF");  scanf("%lf", &dest.y);
+		printf("ç›®æ ‡å€¼çš„Xåæ ‡ï¼š");  scanf("%lf", &dest.x);
+		printf("ã€€ã€€ã€€ã€€ï¼¹åº§æ¨™ï¼š");  scanf("%lf", &dest.y);
 
 		if (!move(&mycar, dest))
-			puts("\a”R—¿•s‘«‚ÅˆÚ“®‚Å‚«‚Ü‚¹‚ñB");
+			puts("\a ç”±äºç¼ºä¹ç‡ƒæ–™è€Œæ²¡æœ‰ç‡ƒæ–™è¡Œé©¶ã€‚");
 	}
 
 	return 0;

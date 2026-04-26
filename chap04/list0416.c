@@ -1,5 +1,5 @@
 /*
-	‹ã‹ã‚Ì•\‚ğ•\¦
+	æ˜¾ç¤ºä¹˜æ³•å£è¯€è¡¨
 */
 
 #include <stdio.h>
@@ -11,7 +11,7 @@ int main(void)
 	for (i = 1; i <= 9; i++) {
 		for (j = 1; j <= 9; j++)
 			printf("%3d", i * j);
-		putchar('\n');				/* ‰üs */
+		putchar('\n');				/* æ”¹è¡Œ */
 	}
 
 	return 0;

@@ -1,12 +1,12 @@
 /*
-	”z—ñ‚Ì‘S—v‘f‚Ì•½‹Ï‚ğÀ”‚Å‹‚ß‚é
+	æ±‚æ•°ç»„æ‰€æœ‰å…ƒç´ çš„å¹³å‡å€¼ä½œä¸ºå®æ•°
 */
 
 #include <stdio.h>
 
-#define  NUMBER		5		/* —v‘f” */
+#define  NUMBER		5		/* è¦ç´ æ•° */
 
-/* ”z—ña‚Ì‘S—v‘f‚Ì•½‹Ï‚ğÀ”‚Å•Ô‚· */
+/* ä»¥å®æ•°å½¢å¼è¿”å›æ•°ç»„ a æ‰€æœ‰å…ƒç´ çš„å¹³å‡å€¼ */
 double ave_ary(const int a[], int n)
 {
 	int i;
@@ -23,11 +23,11 @@ int main(void)
 	int v[NUMBER];
 
 	for (i = 0; i < NUMBER; i++) {
-		printf("v[%d]F", i);
+		printf("v[%d]ï¼š", i);
 		scanf("%d", &v[i]);
 	}
 
-	printf("‘S—v‘f‚Ì•½‹Ï’l‚Í%.1f‚Å‚·B\n", ave_ary(v, NUMBER));
+	printf("å æœ‰å…ƒç´ å¹³å‡å€¼%.1fã€‚\n", ave_ary(v, NUMBER));
 
 	return 0;
 }

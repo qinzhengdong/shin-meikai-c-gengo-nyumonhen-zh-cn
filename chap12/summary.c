@@ -1,50 +1,50 @@
 /*
-	“ú•t‚ğ•\‚·\‘¢‘Ì‚ÆlŠÔ‚ğ•\‚·\‘¢‘Ì
+	ä»£è¡¨æ—¥æœŸçš„ç»“æ„å’Œä»£è¡¨äººçš„ç»“æ„
 */
 
 #include <stdio.h>
 
-#define NAME_LEN	128		/* –¼‚Ì•¶š” */
+#define NAME_LEN	128		/* åç§°ä¸­çš„å­—ç¬¦æ•° */
 
-/*=== “ú•t‚ğ•\‚·\‘¢‘Ì ===*/
+/*===æ˜¾ç¤ºæ—¥æœŸç»“æ„===*/
 struct Date {
-	int y;		/* ”N */
-	int m;		/* Œ */
-	int d;		/* “ú */
+	int y;		/* å¹´ */
+	int m;		/* æœˆ */
+	int d;		/* æ—¥ */
 };
 
-/*=== lŠÔ‚ğ•\‚·\‘¢‘Ì ===*/
+/*===ä»£è¡¨äººç±»çš„ç»“æ„===*/
 typedef struct {
-	char name[NAME_LEN];	/* –¼ */
-	struct Date birthday;	/* ’a¶“ú */
+	char name[NAME_LEN];	/* æ°å */
+	struct Date birthday;	/* èª•ç”Ÿæ—¥ */
 } Human;
 
-/*--- ƒ|ƒCƒ“ƒ^h‚ªw‚·lŠÔ‚Ì–¼‚Æ’a¶“ú‚ğ•\¦ ---*/
+/*--- æ˜¾ç¤ºæŒ‡é’ˆhæ‰€æŒ‡å‘çš„äººçš„å§“åå’Œç”Ÿæ—¥---*/
 void print_Human(const Human *h)
 {
-	printf("%si%04d”N%02dŒ%02d“ú¶‚Ü‚êj\n",
+	printf("%sï¼ˆå‡ºç”Ÿäº %04d å¹´ %02d æœˆ %02dï¼‰ \n",
 				h->name, h->birthday.y, h->birthday.m, h->birthday.d);
 }
 
 int main(void)
 {
 	int i;
-	struct Date today;		/* ¡“ú‚Ì“ú•t */
+	struct Date today;		/* ä»Šå¤©çš„æ—¥æœŸ */
 
 	Human member[] = {
-		{"ŒÃ‰ê­’j", {1904, 11, 18}},
-		{"Ä“c–]—m", {1963, 11, 18}},
-		{"‰ª“cyˆê", {1980, 11, 18}},
+		{"å¤è³€æ”¿ç”·", {1904, 11, 18}},
+		{"æŸ´ç”°æœ›æ´‹", {1963, 11, 18}},
+		{"å²¡ç”°å‡†ä¸€", {1980, 11, 18}},
 	};
 
-	printf("¡“ú‚Ì“ú•t‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
-	printf("”NF");   scanf("%d", &today.y);
-	printf("ŒF");   scanf("%d", &today.m);
-	printf("“úF");   scanf("%d", &today.d);
+	printf("ç°åœ¨æ˜¯è¿›å£æˆªæ­¢æ—¥æœŸã€‚\n");
+	printf("å¹´ï¼š");   scanf("%d", &today.y);
+	printf("æœˆï¼š");   scanf("%d", &today.m);
+	printf("æ—¥ï¼š");   scanf("%d", &today.d);
 
-	printf("¡“ú‚Í%d”N%dŒ%d“ú‚Å‚·‚ËB\n", today.y, today.m, today.d);
+	printf("ä»Šå¤©æ˜¯ %d æœˆ %d %d å¤©ã€‚\n", today.y, today.m, today.d);
 
-	printf("--- ‰ïˆõˆê——•\ ---\n");
+	printf("--- ä¼šå“¡ä¸€è¦§è¡¨ ---\n");
 	for (i = 0; i < sizeof(member) / sizeof(member[0]); i++)
 		print_Human(&member[i]);
 
