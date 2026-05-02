@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C: Debug active file (lldb)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/.bin/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "C: build active file"
+    }
+  ]
+}

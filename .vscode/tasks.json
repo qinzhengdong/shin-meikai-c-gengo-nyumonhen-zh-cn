@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C: build and run active file",
+      "type": "shell",
+      "command": "mkdir -p \"${workspaceFolder}/.vscode/.bin\" && clang -std=c11 -Wall -Wextra \"${file}\" -o \"${workspaceFolder}/.vscode/.bin/${fileBasenameNoExtension}\" && \"${workspaceFolder}/.vscode/.bin/${fileBasenameNoExtension}\"",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "C: build active file",
+      "type": "shell",
+      "command": "mkdir -p \"${workspaceFolder}/.vscode/.bin\" && clang -std=c11 -Wall -Wextra \"${file}\" -o \"${workspaceFolder}/.vscode/.bin/${fileBasenameNoExtension}\"",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}

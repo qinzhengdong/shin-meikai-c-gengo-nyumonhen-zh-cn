@@ -1,0 +1,7 @@
+{
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "c": "mkdir -p .vscode/.bin && clang -std=c11 -Wall -Wextra $fullFileName -o .vscode/.bin/$fileNameWithoutExt && .vscode/.bin/$fileNameWithoutExt"
+  }
+}
