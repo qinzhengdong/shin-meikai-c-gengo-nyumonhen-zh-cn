@@ -4,17 +4,17 @@
 
 #include <stdio.h>
 
-int main(void)
+int main(void) /* 主函数 */
 {
-	int num;
+	int num; /* 整数变量 num */
 
 	printf("请输入一个整数：");
-	scanf("%d", &num);
+	scanf("%d", &num); /* 读取整数 */
 
-	if (num)
-		puts("当前数量为零。");
+	if (num) /* 如果 num 不为0 */
+		puts("这个数字不为零。");
 	else
 		puts("这个数字为零。");
 
-	return 0;
+	return 0; /* 返回值为0 */
 }

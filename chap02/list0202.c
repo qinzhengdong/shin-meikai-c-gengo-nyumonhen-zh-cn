@@ -11,7 +11,7 @@ int main(void)
 	printf("请输入一个整数：");
 	scanf("%d", &no);							/* 读取整数值 */
 
-	printf("最小数量为 %d。\n", no % 10);
+	printf("最后一位数是 %d。\n", no % 10);
 
 	return 0;
 }

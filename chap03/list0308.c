@@ -8,13 +8,13 @@ int main(void)
 {
 	int num;
 
-	printf("请输入一个整数：");
-	scanf("%d", &num);
+	printf("请输入一个整数："); /* 提示用户输入一个整数 */
+	scanf("%d", &num); /* 读取整数 */
 
-	if ((num % 10) == 5)
-		puts("最小数量为 5。");
+	if ((num % 10) == 5) /* 如果 num 的最低有效位是5 */	
+		puts("这个数字的最后一位是5。");
 	else
-		puts("最少数量 5。");
+		puts("这个数字的最后一位不是5。");
 
 	return 0;
 }

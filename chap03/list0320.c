@@ -8,12 +8,12 @@ int main(void)
 {
 	int sw;
 
-	printf("整数：");
-	scanf("%d", &sw);
+	printf("整数："); /* 提示用户输入一个整数 */
+	scanf("%d", &sw); /* 读取整数 */
 
-	switch (sw) {
-	 case 1  : puts("A");  puts("B");  break;
-	 case 2  : puts("C");
+	switch (sw) { /* 根据 sw 执行不同的操作 */
+	 case 1  : puts("A");  puts("B");  break; 
+	 case 2  : puts("C"); /* 如果 sw 为2 */
 	 case 5  : puts("D");  break;
 	 case 6  :
 	 case 7  : puts("E");  break;

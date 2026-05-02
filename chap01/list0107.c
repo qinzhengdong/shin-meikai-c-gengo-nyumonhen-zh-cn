@@ -2,7 +2,7 @@
 	打招呼并报警3次
 */
 
-#include <stdio.h>
+#include <stdio.h>  /* 包含标准输入输出库 */
 
 int main(void)
 {

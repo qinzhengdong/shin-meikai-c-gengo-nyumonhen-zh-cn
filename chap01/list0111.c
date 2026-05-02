@@ -2,16 +2,17 @@
 	按原样显示读取的整数值
 */
 
-#include <stdio.h>
+#include <stdio.h>							/* 包含标准输入输出库 */
 
-int main(void)
+int main(void)								/* 主函数 */
 {
-	int no;
+	int no;									/* 定义一个整数变量 no */
 
-	printf("请输入一个整数：");
+	printf("请输入一个整数：");           /* 提示用户输入一个整数 */
+	
 	scanf("%d", &no);							/* 读取整数值 */
+	
+	printf("您输入的整数是%d。\n", no);                 /* 显示输入的整数值 */
 
-	printf("输入%d。\n", no);
-
-	return 0;
-}
+	return 0;									/* 返回值为0 */
+}											/* 主函数结束 */

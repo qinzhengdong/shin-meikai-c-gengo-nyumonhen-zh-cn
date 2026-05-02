@@ -8,14 +8,14 @@ int main(void)
 {
 	int n1, n2;
 
-	puts("输入两个整数。");
+	puts("输入两个整数。"); /* 提示用户输入两个整数 */	
 	printf("整数１：");   scanf("%d", &n1);
-	printf("整数２：");   scanf("%d", &n2);
+	printf("整数２：");   scanf("%d", &n2); /* 读取整数 */
 
-	if (n1 > n2)
-		printf("更多展览%d。\n", n1);
+	if (n1 > n2) /* 如果 n1 大于 n2 */
+		printf("较大的数字是%d。\n", n1);
 	else
-		printf("更多展览%d。\n", n2);
+		printf("较大的数字是%d。\n", n2); 
 
 	return 0;
 }

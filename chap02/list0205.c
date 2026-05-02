@@ -12,7 +12,7 @@ int main(void)
 	printf("整数a：");   scanf("%d", &a);
 	printf("整数b：");   scanf("%d", &b);
 
-	printf("另一个人的平均值是 %d。\n", (a + b) / 2);
+	printf("他们的平均值是 %d。\n", (a + b) / 2);
 
 	return 0;
 }

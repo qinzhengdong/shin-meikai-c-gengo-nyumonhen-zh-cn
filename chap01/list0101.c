@@ -2,11 +2,11 @@
 	显示整数值15和37相加的结果
 */
 
-#include <stdio.h>
+#include <stdio.h> /* 包含标准输入输出库 */
 
-int main(void)
+int main(void) /* 主函数 */	
 {
 	printf("%d", 15 + 37);		/* 以十进制显示整数值 15 和 37 相加的结果 */
-
-	return 0;
+	return 0;					/* 返回值为0 */
+}							/* 主函数结束 */
 }

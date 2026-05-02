@@ -12,7 +12,7 @@ int main(void)
 	printf("整数a：");   scanf("%d", &a);
 	printf("整数b：");   scanf("%d", &b);
 
-	printf("a 从 b 中删去，达到 %d 并删除 %d。\n", a / b, a % b);
+	printf("a 除以 b 的商是 %d，余数是 %d。\n", a / b, a % b);
 
 	return 0;
 }

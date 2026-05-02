@@ -8,13 +8,13 @@ int main(void)
 {
 	int n1, n2, max;
 
-	puts("输入两个整数。");
-	printf("整数１：");   scanf("%d", &n1);
-	printf("整数２：");   scanf("%d", &n2);
+	puts("输入两个整数。"); /* 提示用户输入两个整数 */
+	printf("整数１：");   scanf("%d", &n1); /* 读取整数 */
+	printf("整数２：");   scanf("%d", &n2); /* 读取整数 */
 
 	max = (n1 > n2) ? n1 : n2;		/* 将较大的值赋给 max */
 
-	printf("更多展览%d。\n", max);
+	printf("较大的数字是%d。\n", max);
 
-	return 0;
+	return 0; /* 返回值为0 */
 }
