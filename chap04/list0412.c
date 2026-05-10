@@ -6,14 +6,14 @@
 
 int main(void)
 {
-	int i, no;
+	int i, no; /* 整数变量 i 和 no */
 
 	printf("正整数：");
 	scanf("%d", &no);
 
 	for (i = 1; i <= no; i++)
-		putchar('*');
-	putchar('\n');
+		putchar('*'); /* 显示 * */
+	putchar('\n'); /* 显示换行 */
 
-	return 0;
+	return 0; /* 返回值为0 */
 }

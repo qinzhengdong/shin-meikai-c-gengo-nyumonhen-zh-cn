@@ -1,25 +1,22 @@
-/*
-	根部整数开口指示石头修剪机芯（触点0、1、2）
-*/
+/*用户选择石头剪刀布，程序显示对应的手势*/
 
 #include <stdio.h>
 
 int main(void)
 {
-	int hand;	/* 手 */
+	int hand;	/* 手（0...剪刀/1...石头/2...布） */
 
 	do {
-		printf("请选择一个动作 [0...Goo/1...Scotch/2...Par]：");
-		scanf("%d", &hand);
-	} while (hand < 0 || hand > 2);
+		printf("请选择出什么拳[0...剪刀/1...石头/2...布]：");
+		scanf("%d", &hand); /* 读取整数 */
+	} while (hand < 0 || hand > 2); /* 如果 hand 不在 0 到 2 之间 */
 
-	printf("你");
-	switch (hand) {
-	 case 0: printf("粘性物");	break;
-	 case 1: printf("长木");	break;
-	 case 2: printf("标杆");	break;
+	printf("你选择了");
+	switch (hand) { /* 根据 hand 执行不同的操作 */
+	 case 0: printf("剪刀");	break;
+	 case 1: printf("石头");	break;
+	 case 2: printf("布");	break;
 	}
-	printf("我选择了它。\n");
 
-	return 0;
+	return 0; /* 返回值为0 */
 }

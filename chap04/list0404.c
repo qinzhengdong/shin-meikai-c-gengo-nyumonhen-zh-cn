@@ -20,11 +20,11 @@ int main(void)
 		sum += t;	 /* 将 t 添加到总和中 */
 		cnt++;		 /* 增加碳数 */
 
-		printf("仍然？ <是…0/否…9>：");
+		printf("继续吗？ <是…0/否…9>：");
 		scanf("%d", &retry);
 	} while (retry == 0);
 
-	printf("平均强度 %d，平均强度 %.2f。\n", sum, (double)sum / cnt);
+	printf("和为 %d，平均值为 %.2f。\n", sum, (double)sum / cnt);
 
 	return 0;
 }

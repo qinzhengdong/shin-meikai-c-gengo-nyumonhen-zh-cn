@@ -1,6 +1,4 @@
-/*
-	呈现石头剪刀布基整数运动（多次接触0、1、2）【不同解解法】
-*/
+/*用户选择石头剪刀布，程序显示对应的手势*/
 
 #include <stdio.h>
 
@@ -9,17 +7,17 @@ int main(void)
 	int hand;	/* 手 */
 
 	do {
-		printf("请选择一个动作 [0...Goo/1...Scotch/2...Par]：");
+		printf("请选择石头剪刀布[0...石头/1...剪刀/2...布]：");
 		scanf("%d", &hand);
 	} while (!(hand >= 0 && hand <= 2));
 
-	printf("你");
+	printf("你选择了");
 	switch (hand) {
-	 case 0: printf("粘性物");	break;
-	 case 1: printf("长木");	break;
-	 case 2: printf("标杆");	break;
+	 case 0: printf("石头");	break;
+	 case 1: printf("剪刀");	break;
+	 case 2: printf("布");	break;
 	}
-	printf("我选择了它。\n");
+	printf("。\n");
 
 	return 0;
 }
